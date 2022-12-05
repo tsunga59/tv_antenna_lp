@@ -1,0 +1,98 @@
+@charset "UTF-8";
+@import url("reset.css");
+/* 色コード */
+/* ============================================ */
+/* ブレイクポイント */
+/* ============================================ */
+/* 画面サイズ表示・非表示 */
+/* ============================================ */
+.sp {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .pc {
+    display: none;
+  }
+  .sp {
+    display: block;
+  }
+}
+
+/* 共通設定 */
+/* ============================================ */
+html {
+  font-size: 62.5%;
+}
+
+@media screen and (max-width: 1024px) {
+  html {
+    font-size: 55%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  html {
+    font-size: 45%;
+  }
+}
+
+body {
+  font-family: 'Noto Sans JP', "游ゴシック体", sans-serif;
+  font-size: 1.6rem;
+  letter-spacing: 0.05rem;
+  line-height: 1.5;
+  color: #333;
+  background-color: #fff;
+  overflow-x: hidden;
+}
+
+section {
+  width: 100%;
+  min-height: 50vh;
+  -webkit-box-shadow: 0 0 5px #000;
+          box-shadow: 0 0 5px #000;
+}
+
+.container {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 60px 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+h1 {
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  visibility: hidden;
+  position: absolute;
+}
+
+img {
+  width: 100%;
+}
+
+/* レスポンシブ */
+/* ============================================ */
+@media screen and (max-width: 1024px) {
+  .container {
+    padding: 60px 40px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    padding: 40px 20px;
+  }
+}
+
+/* header */
+/* ============================================ */
+/* main */
+/* ============================================ */
+/* footer */
+/* ============================================ */
+/*# sourceMappingURL=style.css.map */
