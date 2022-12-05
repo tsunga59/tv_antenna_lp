@@ -1,0 +1,110 @@
+@charset "utf-8";
+
+/* 色コード */
+/* ============================================ */
+$baseColor: #fff;
+$fontColor: #333;
+$mainColor: #006F4F;
+$subColor: #6EB52C;
+$accentColor: orange;
+
+/* ブレイクポイント */
+/* ============================================ */
+@mixin tab {
+    @media screen and (max-width: 1024px) {
+        @content;
+    }
+}
+@mixin sp {
+    @media screen and (max-width: 767px) {
+        @content;
+    }
+}
+
+/* 画面サイズ表示・非表示 */
+/* ============================================ */
+.sp {
+    display: none;
+}
+// @include tab {
+//     .pc {
+//         display: none;
+//     }
+//     .tab {
+//         display: block;
+//     }
+// }
+@include sp {
+    // .tab {
+    //     display: none;
+    // }
+    .pc {
+        display: none;
+    }
+    .sp {
+        display: block;
+    }
+}
+
+/* 共通設定 */
+/* ============================================ */
+html {
+    font-size: 62.5%;
+    @include tab {
+        font-size: 55%;
+    }
+    @include sp {
+        font-size: 45%;
+    }
+}
+body {
+    font-family: 'Noto Sans JP', "游ゴシック体", sans-serif;
+    font-size: 1.6rem;
+    letter-spacing: 0.05rem;
+    line-height: 1.5;
+    color: $fontColor;
+    background-color: $baseColor;
+    overflow-x: hidden;
+}
+section {
+    width: 100%;
+    min-height: 50vh;
+    box-shadow: 0 0 5px #000;
+}
+.container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 60px 0;
+    box-sizing: border-box;
+}
+h1 {
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    visibility: hidden;
+    position: absolute;
+}
+
+img {
+    width: 100%;
+}
+
+
+/* レスポンシブ */
+/* ============================================ */
+@include tab {
+
+.container {
+    padding: 60px 40px;
+}
+
+}
+
+@include sp {
+
+.container {
+    padding: 40px 20px;
+}
+
+}
