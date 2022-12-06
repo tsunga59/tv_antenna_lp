@@ -42,7 +42,7 @@ body {
   font-size: 1.6rem;
   letter-spacing: 0.05rem;
   line-height: 1.5;
-  color: #333;
+  color: #232323;
   background-color: #fff;
   overflow-x: hidden;
 }
@@ -91,6 +91,73 @@ img {
 
 /* header */
 /* ============================================ */
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 90px;
+  background-color: #fff;
+  padding: 16px 70px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 20px;
+}
+
+header nav ul li {
+  margin-right: 10px;
+}
+
+header nav ul li:last-of-type {
+  margin-right: 0;
+}
+
+header nav .contact_btn a {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: #16a8e0;
+  padding: 18px 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 30px;
+}
+
+header nav .contact_btn a:hover {
+  opacity: .7;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  cursor: pointer;
+}
+
 /* main */
 /* ============================================ */
 /* footer */
