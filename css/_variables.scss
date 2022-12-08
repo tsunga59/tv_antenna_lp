@@ -84,6 +84,30 @@ h1 {
     visibility: hidden;
     position: absolute;
 }
+.sub_title {
+    font-size: 4.5rem;
+    font-weight: bold;
+    line-height: 1.4;
+    text-align: center;
+    margin-bottom: 50px;
+    .decorate {
+        display: block;
+        font-size: 2.5rem;
+        position: relative;
+        &:before, &:after {
+            content: "";
+            display: inline-block;
+            width: 7px;
+            height: 2rem;
+            margin: 0 15px;
+            background-color: #aee5fc;
+            transform: skewX(-35deg);
+        }
+    }
+    .small {
+        font-size: 3.8rem;
+    }
+}
 img {
     width: 100%;
 }
