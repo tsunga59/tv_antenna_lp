@@ -38,7 +38,7 @@ html {
 }
 
 body {
-  font-family: 'Noto Sans JP', "游ゴシック体", sans-serif;
+  font-family: 'Zen Kaku Gothic New', sans-serif;
   font-size: 1.6rem;
   letter-spacing: 0.05rem;
   line-height: 1.5;
@@ -49,16 +49,14 @@ body {
 
 section {
   width: 100%;
-  min-height: 50vh;
-  -webkit-box-shadow: 0 0 5px #000;
-          box-shadow: 0 0 5px #000;
+  height: 100%;
 }
 
 .container {
   width: 100%;
   max-width: 1000px;
   margin: 0 auto;
-  padding: 60px 0;
+  padding: 6rem 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -152,6 +150,142 @@ header nav .contact_btn a {
 }
 
 header nav .contact_btn a:hover {
+  opacity: .7;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  cursor: pointer;
+}
+
+/* top */
+/* ============================================ */
+.top {
+  background-color: #cecece;
+  margin-top: 90px;
+}
+
+.top .container {
+  padding: 60px 80px;
+}
+
+.top_area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding: 20px 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.top_left .main_text {
+  font-size: 5rem;
+  font-weight: bold;
+  letter-spacing: .8rem;
+  line-height: 1.3;
+  margin-bottom: 10px;
+}
+
+.top_left .main_text span {
+  color: #16a8e0;
+}
+
+.top_left .area_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.top_left .area_list li {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #16a8e0;
+  background-color: #fff;
+  padding: 6px 8px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-right: 5px;
+  -webkit-box-shadow: 0 0 10px rgba(61, 141, 172, 0.2);
+          box-shadow: 0 0 10px rgba(61, 141, 172, 0.2);
+  border-radius: 30px;
+}
+
+.top_left .area_list li:last-of-type {
+  margin-right: 0;
+}
+
+.top_right .achievement_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.top .bottom_area {
+  margin-top: 20px;
+  position: relative;
+}
+
+.top .bottom_area .sub_text {
+  background-color: #fff;
+  padding: 30px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  position: relative;
+}
+
+.top .bottom_area .sub_text .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-weight: 2.5rem;
+  font-weight: bold;
+  color: #16a8e0;
+  margin-bottom: 15px;
+}
+
+.top .bottom_area .sub_text .title:before {
+  content: url(../images/exclamation_icon.png);
+  display: inline-block;
+  margin-right: 7px;
+}
+
+.top .bottom_area .sub_text .text {
+  font-size: 1.4rem;
+  letter-spacing: .01rem;
+  line-height: 1.7;
+}
+
+.top .bottom_area .sub_text .text .blue_marker {
+  text-decoration: underline;
+  text-decoration-thickness: .8rem;
+  -webkit-text-decoration-color: #d9f3fd;
+          text-decoration-color: #d9f3fd;
+  text-underline-offset: -0.5rem;
+  text-decoration-skip-ink: none;
+}
+
+.top .bottom_area .contact_banner {
+  -webkit-box-shadow: 0 0 20px rgba(61, 141, 172, 0.2);
+          box-shadow: 0 0 20px rgba(61, 141, 172, 0.2);
+  position: absolute;
+  top: 0;
+  right: -210px;
+}
+
+.top .bottom_area .contact_banner a:hover {
   opacity: .7;
   -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;

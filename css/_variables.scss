@@ -58,7 +58,7 @@ html {
     }
 }
 body {
-    font-family: 'Noto Sans JP', "游ゴシック体", sans-serif;
+    font-family: 'Zen Kaku Gothic New', sans-serif;
     font-size: 1.6rem;
     letter-spacing: 0.05rem;
     line-height: 1.5;
@@ -68,14 +68,13 @@ body {
 }
 section {
     width: 100%;
-    min-height: 50vh;
-    box-shadow: 0 0 5px #000;
+    height: 100%;
 }
 .container {
     width: 100%;
     max-width: 1000px;
     margin: 0 auto;
-    padding: 60px 0;
+    padding: 6rem 0;
     box-sizing: border-box;
 }
 h1 {
@@ -85,7 +84,6 @@ h1 {
     visibility: hidden;
     position: absolute;
 }
-
 img {
     width: 100%;
 }

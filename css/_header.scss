@@ -46,3 +46,104 @@ header {
     }
   }
 }
+
+/* top */
+/* ============================================ */
+.top {
+  background-color: #cecece;
+  // background: url(../images/);
+  margin-top: 90px;
+  .container {
+    padding: 60px 80px;
+  }
+  &_area {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 20px 0;
+    box-sizing: border-box;
+  }
+  &_left {
+    .main_text {
+      font-size: 5rem;
+      font-weight: bold;
+      letter-spacing: .8rem;
+      line-height: 1.3;
+      margin-bottom: 10px;
+      span {
+        color: $mainColor;
+      }
+    }
+    .area_list {
+      display: flex;
+      justify-content: space-between;
+      li {
+        font-size: 1.3rem;
+        font-weight: bold;
+        color: $mainColor;
+        background-color: $baseColor;
+        padding: 6px 8px;
+        box-sizing: border-box;
+        margin-right: 5px;
+        box-shadow: 0 0 10px rgba($color: #3d8dac, $alpha: .2);
+        border-radius: 30px;
+        &:last-of-type {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+  &_right {
+    .achievement_list {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+  .bottom_area {
+    margin-top: 20px;
+    position: relative;
+    .sub_text {
+      background-color: $baseColor;
+      padding: 30px;
+      box-sizing: border-box;
+      box-shadow: 0 0 20px rgba($color: #000, $alpha: .2);
+      border-radius: 10px;
+      position: relative;
+      .title {
+        display: flex;
+        font-weight: 2.5rem;
+        font-weight: bold;
+        color: $mainColor;
+        margin-bottom: 15px;
+        &:before {
+          content: url(../images/exclamation_icon.png);
+          display: inline-block;
+          margin-right: 7px;
+        }
+      }
+      .text {
+        font-size: 1.4rem;
+        letter-spacing: .01rem;
+        line-height: 1.7;
+        .blue_marker {
+          text-decoration: underline;
+          text-decoration-thickness: .8rem;
+          text-decoration-color: #d9f3fd;
+          text-underline-offset: -0.5rem;
+          text-decoration-skip-ink: none;
+        }
+      }
+    }
+    .contact_banner {
+      box-shadow: 0 0 20px rgba($color: #3d8dac, $alpha: .2);
+      position: absolute;
+      top: 0;
+      right: -210px;
+      a:hover {
+        opacity: .7;
+        transition: all .3s ease-in-out;
+        cursor: pointer;
+      }
+    }
+  }
+}
