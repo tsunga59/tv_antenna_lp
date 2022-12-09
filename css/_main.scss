@@ -127,3 +127,34 @@
     }
   }
 }
+
+.trouble {
+  ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    li {
+      width: 24%;
+      position: relative;
+      &:before {
+        content: url(../images/question_icon.png);
+        position: absolute;
+        top: -30px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      img {
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgba($color: #000, $alpha: .2);
+      }
+      p {
+        font-size: 2rem;
+        font-weight: bold;
+        letter-spacing: .01rem;
+        line-height: 1.3;
+        text-align: center;
+        margin-top: 15px;
+      }
+    }
+  }
+}

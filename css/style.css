@@ -499,6 +499,46 @@ header nav .contact_btn a:hover {
   width: 40%;
 }
 
+.trouble ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.trouble ul li {
+  width: 24%;
+  position: relative;
+}
+
+.trouble ul li:before {
+  content: url(../images/question_icon.png);
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.trouble ul li img {
+  border-radius: 10px;
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.trouble ul li p {
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: .01rem;
+  line-height: 1.3;
+  text-align: center;
+  margin-top: 15px;
+}
+
 /* footer */
 /* ============================================ */
 /*# sourceMappingURL=style.css.map */
