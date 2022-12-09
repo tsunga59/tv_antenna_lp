@@ -122,15 +122,9 @@ header {
       }
       .text {
         font-size: 1.4rem;
+        font-weight: 500;
         letter-spacing: .01rem;
         line-height: 1.7;
-        .blue_marker {
-          text-decoration: underline;
-          text-decoration-thickness: .8rem;
-          text-decoration-color: #d9f3fd;
-          text-underline-offset: -0.5rem;
-          text-decoration-skip-ink: none;
-        }
       }
     }
     .contact_banner {

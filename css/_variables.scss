@@ -84,7 +84,7 @@ h1 {
     visibility: hidden;
     position: absolute;
 }
-.sub_title {
+h2.sub_title {
     font-size: 4.5rem;
     font-weight: bold;
     line-height: 1.4;
@@ -110,6 +110,20 @@ h1 {
 }
 img {
     width: 100%;
+}
+.blue_marker {
+    text-decoration: underline;
+    text-decoration-thickness: .8rem;
+    text-decoration-color: #d9f3fd;
+    text-underline-offset: -0.5rem;
+    text-decoration-skip-ink: none;
+}
+.yellow_marker {
+    text-decoration: underline;
+    text-decoration-thickness: .8rem;
+    text-decoration-color: #fff4ac;
+    text-underline-offset: -0.5rem;
+    text-decoration-skip-ink: none;
 }
 
 
