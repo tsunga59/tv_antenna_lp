@@ -108,6 +108,22 @@ h2.sub_title {
         font-size: 3.8rem;
     }
 }
+h3.sub_title {
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 50px;
+    position: relative;
+    &:before, &:after {
+        content: "";
+        display: inline-block;
+        width: 7px;
+        height: 2.5rem;
+        margin: 0 15px;
+        background-color: #aee5fc;
+        transform: skewX(-35deg);
+    }
+}
 img {
     width: 100%;
 }

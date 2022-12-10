@@ -12,6 +12,7 @@
     flex-wrap: wrap;
     li {
       width: 49%;
+      height: 150px;
       background-color: $baseColor;
       padding: 10px;
       box-sizing: border-box;
@@ -62,6 +63,8 @@
           font-weight: bold;
           line-height: 1;
           width: 49%;
+          padding-bottom: 10px;
+          position: relative;
           .large {
             font-family: 'Oswald', sans-serif;
             font-size: 4.6rem;
@@ -70,6 +73,9 @@
           .small {
             font-size: 1.2rem;
             font-weight: normal;
+            position: absolute;
+            bottom: -10px;
+            left: 0;
           }
         }
       }
@@ -251,6 +257,97 @@
   }
 }
 
-.price {
-  background-color: #cecece;
+.case {
+  ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    li {
+      display: flex;
+      justify-content: space-between;
+      width: 49%;
+      height: 330px;
+      background-color: $baseColor;
+      margin-bottom: 20px;
+      box-shadow: 0 0 20px rgba($color: #000, $alpha: .2);
+      border-radius: 10px;
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+      img {
+        width: 43%;
+        border-radius: 10px 0 0 10px;
+      }
+      .text_area {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        width: 55%;
+        padding: 30px;
+        box-sizing: border-box;
+        .name {
+          font-size: 2.2rem;
+          font-weight: bold;
+          line-height: 1.2;
+          letter-spacing: -.2rem;
+          .small {
+            display: block;
+            font-size: 1.3rem;
+            line-height: 1.3;
+          }
+        }
+        .price {
+          font-size: 1.8rem;
+          font-weight: bold;
+          line-height: 1;
+          padding-bottom: 20px;
+          position: relative;
+          .large {
+            font-family: 'Oswald', sans-serif;
+            font-size: 4.6rem;
+            font-weight: 500;
+          }
+          .small {
+            font-size: 1.2rem;
+            font-weight: normal;
+            width: 100%;
+            position: absolute;
+            bottom: 0px;
+            left: 0;
+          }
+        }
+      }
+    }
+  }
+  .more_btn {
+    display: flex;
+    justify-content: flex-end;
+    text-align: center;
+    a {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: $mainColor;
+      background-color: $baseColor;
+      padding: 10px 40px 10px 20px;
+      box-sizing: border-box;
+      border: 2px solid $mainColor;
+      border-radius: 30px;
+      position: relative;
+      &:hover {
+        color: $baseColor;
+        background-color: $mainColor;
+        cursor: pointer;
+        transition: all .3s ease-in-out;
+      }
+      &:after {
+        content: "▶︎";
+        font-size: 1.2rem;
+        position: absolute;
+        top: 50%;
+        right: 20px;
+        transform: translateY(-50%);
+      }
+    }
+  }
 }
