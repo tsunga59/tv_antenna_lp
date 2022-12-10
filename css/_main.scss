@@ -351,3 +351,36 @@
     }
   }
 }
+
+.area {
+  h3.sub_title {
+    margin-bottom: 30px;
+  }
+  ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    li {
+      font-size: 1.5rem;
+      margin-bottom: 20px;
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+      .prefecture {
+        display: inline-block;
+        font-weight: bold;
+        color: $mainColor;
+        background-color: $baseColor;
+        padding: 5px 10px;
+        box-sizing: border-box;
+        margin-bottom: 5px;
+        box-shadow: 0 0 5px rgba($color: #c7d4d9, $alpha: .5);
+        border-radius: 30px;
+      }
+      .city {
+        font-weight: 500;
+        line-height: 1.7;
+      }
+    }
+  }
+}

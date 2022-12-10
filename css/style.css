@@ -826,6 +826,49 @@ header nav .contact_btn a:hover {
           transform: translateY(-50%);
 }
 
+.area h3.sub_title {
+  margin-bottom: 30px;
+}
+
+.area ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.area ul li {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.area ul li:last-of-type {
+  margin-bottom: 0;
+}
+
+.area ul li .prefecture {
+  display: inline-block;
+  font-weight: bold;
+  color: #16a8e0;
+  background-color: #fff;
+  padding: 5px 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-bottom: 5px;
+  -webkit-box-shadow: 0 0 5px rgba(199, 212, 217, 0.5);
+          box-shadow: 0 0 5px rgba(199, 212, 217, 0.5);
+  border-radius: 30px;
+}
+
+.area ul li .city {
+  font-weight: 500;
+  line-height: 1.7;
+}
+
 /* footer */
 /* ============================================ */
 /*# sourceMappingURL=style.css.map */
