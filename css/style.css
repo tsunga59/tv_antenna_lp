@@ -869,6 +869,115 @@ header nav .contact_btn a:hover {
   line-height: 1.7;
 }
 
+.flow ul {
+  padding: 0 80px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.flow ul.free {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.flow ul.free:before {
+  content: "無料対応";
+  font-size: 2.6rem;
+  font-weight: bold;
+  text-align: center;
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  letter-spacing: 1rem;
+  height: 100%;
+  color: #16a8e0;
+  background-color: #fff4ac;
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.flow ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 140px;
+  background-color: #fff;
+  padding: 30px 40px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-bottom: 20px;
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.flow ul li:last-of-type {
+  margin-bottom: 0;
+}
+
+.flow ul li:before {
+  content: "";
+  width: 200px;
+  height: 100%;
+  background-color: #e4f8ff;
+  position: absolute;
+  top: 0;
+  left: -60px;
+  -webkit-transform: skewX(-35deg);
+          transform: skewX(-35deg);
+}
+
+.flow ul li .step_title {
+  font-family: 'Oswald', sans-serif;
+  font-size: 3.5rem;
+  font-weight: 500;
+  width: 19%;
+  color: #16a8e0;
+  z-index: 1;
+}
+
+.flow ul li .step_title .large {
+  font-size: 4.8rem;
+}
+
+.flow ul li .text_area {
+  width: 78%;
+}
+
+.flow ul li .text_area .title {
+  font-size: 2.2rem;
+  font-weight: bold;
+  letter-spacing: .01rem;
+  margin-bottom: 10px;
+}
+
+.flow ul li .text_area .text {
+  font-weight: 500;
+  letter-spacing: .03rem;
+  line-height: 1.6;
+}
+
+.flow ul li .text_area .text a {
+  text-decoration: underline;
+  text-decoration-thickness: 1%;
+  color: #16a8e0;
+}
+
 /* footer */
 /* ============================================ */
 /*# sourceMappingURL=style.css.map */
