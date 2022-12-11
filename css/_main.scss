@@ -470,3 +470,97 @@
     }
   }
 }
+
+.voice {
+  ul {
+    li {
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 40px;
+      box-shadow: 0 0 20px rgba($color: #000, $alpha: .2);
+      border-radius: 10px;
+      .text_area {
+        width: 60%;
+        background-color: #f4fcff;
+        padding: 40px;
+        box-sizing: border-box;
+        border-radius: 10px;
+        .name {
+          display: flex;
+          align-items: center;
+          font-size: 2.6rem;
+          font-weight: bold;
+          margin-bottom: 20px;
+          .age {
+            font-size: 1.5rem;
+            line-height: 1;
+            color: $baseColor;
+            padding: 6px 14px;
+            box-sizing: border-box;
+            margin-left: 10px;
+            border-radius: 30px;
+            &.woman {
+              background-color: #f3889f;
+            }
+            &.man {
+              background-color: #88ccf3;
+            }
+          }
+        }
+        .text {
+          font-size: 1.4rem;
+          font-weight: 500;
+          line-height: 1.6;
+          letter-spacing: -.01rem;
+        }
+      }
+      .pickup_area {
+        width: 40%;
+        background-color: $baseColor;
+        padding: 40px;
+        box-sizing: border-box;
+        border-radius: 10px;
+        .title {
+          font-family: 'Oswald', sans-serif;
+          font-size: 2.5rem;
+          font-weight: 500;
+          line-height: 1;
+          text-align: center;
+          color: $mainColor;
+          margin-bottom: 20px;
+          position: relative;
+          &:before, &:after {
+            content: "";
+            width: 33%;
+            height: 5px;
+            background-color: #aee5fc;
+            position: absolute;
+            bottom: 0;
+            transform: skewX(-35deg);
+          }
+          &:before {
+            left: 0;
+          }
+          &:after {
+            right: 0;
+          }
+        }
+        .text {
+          display: inline;
+          font-size: 1.6rem;
+          font-weight: bold;
+          line-height: 2.2;
+          letter-spacing: -.01rem;
+          padding-bottom: 5px;
+          box-sizing: border-box;
+          border-bottom: 1px solid #aee5fc;
+          &.fake {
+            display: block;
+            margin-top: -5px;
+          }
+        }
+      }
+    }
+  }
+}
+

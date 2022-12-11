@@ -978,6 +978,121 @@ header nav .contact_btn a:hover {
   color: #16a8e0;
 }
 
+.voice ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 40px;
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+.voice ul li .text_area {
+  width: 60%;
+  background-color: #f4fcff;
+  padding: 40px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 10px;
+}
+
+.voice ul li .text_area .name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 2.6rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.voice ul li .text_area .name .age {
+  font-size: 1.5rem;
+  line-height: 1;
+  color: #fff;
+  padding: 6px 14px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-left: 10px;
+  border-radius: 30px;
+}
+
+.voice ul li .text_area .name .age.woman {
+  background-color: #f3889f;
+}
+
+.voice ul li .text_area .name .age.man {
+  background-color: #88ccf3;
+}
+
+.voice ul li .text_area .text {
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.6;
+  letter-spacing: -.01rem;
+}
+
+.voice ul li .pickup_area {
+  width: 40%;
+  background-color: #fff;
+  padding: 40px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 10px;
+}
+
+.voice ul li .pickup_area .title {
+  font-family: 'Oswald', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 500;
+  line-height: 1;
+  text-align: center;
+  color: #16a8e0;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.voice ul li .pickup_area .title:before, .voice ul li .pickup_area .title:after {
+  content: "";
+  width: 33%;
+  height: 5px;
+  background-color: #aee5fc;
+  position: absolute;
+  bottom: 0;
+  -webkit-transform: skewX(-35deg);
+          transform: skewX(-35deg);
+}
+
+.voice ul li .pickup_area .title:before {
+  left: 0;
+}
+
+.voice ul li .pickup_area .title:after {
+  right: 0;
+}
+
+.voice ul li .pickup_area .text {
+  display: inline;
+  font-size: 1.6rem;
+  font-weight: bold;
+  line-height: 2.2;
+  letter-spacing: -.01rem;
+  padding-bottom: 5px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-bottom: 1px solid #aee5fc;
+}
+
+.voice ul li .pickup_area .text.fake {
+  display: block;
+  margin-top: -5px;
+}
+
 /* footer */
 /* ============================================ */
 /*# sourceMappingURL=style.css.map */
