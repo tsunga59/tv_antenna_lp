@@ -1093,6 +1093,249 @@ header nav .contact_btn a:hover {
   margin-top: -5px;
 }
 
+.contact {
+  background-color: #ceeefb;
+}
+
+.contact .qr_area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 72%;
+  background-color: #fff;
+  padding: 40px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0 auto 90px;
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+.contact .qr_area .text_area {
+  width: 70%;
+}
+
+.contact .qr_area .text_area .line_title {
+  width: 300px;
+  margin-bottom: 10px;
+}
+
+.contact .qr_area .text_area span {
+  display: inline-block;
+  font-weight: bold;
+  line-height: 1;
+  color: #fff;
+  background-color: #06c755;
+  padding: 7px 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-bottom: 15px;
+  border-radius: 30px;
+}
+
+.contact .qr_area .text_area p {
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.7;
+}
+
+.contact .qr_area .line_qr {
+  width: 24%;
+}
+
+.contact .contact_form dl {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 60px;
+}
+
+.contact .contact_form dl dt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.8rem;
+  font-weight: bold;
+  letter-spacing: .2rem;
+  width: 22%;
+  margin-bottom: 30px;
+}
+
+.contact .contact_form dl dt.vertical_top {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.contact .contact_form dl dt .must {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #fff;
+  background-color: #16a8e0;
+  padding: 5px 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 30px;
+}
+
+.contact .contact_form dl dd {
+  width: 76%;
+  margin-bottom: 40px;
+}
+
+.contact .contact_form dl dd:last-of-type {
+  margin-bottom: 0;
+}
+
+.contact .contact_form dl dd input[type="text"], .contact .contact_form dl dd textarea {
+  width: 100%;
+  background-color: #fff;
+  padding: 15px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 1px solid #c6dce5;
+  border-radius: 5px;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.contact .contact_form dl dd input[type="text"]:focus, .contact .contact_form dl dd textarea:focus {
+  background-color: #f2f2f2;
+}
+
+.contact .contact_form dl dd textarea {
+  min-height: 180px;
+}
+
+.contact .contact_form dl dd input[type="radio"] {
+  position: absolute;
+  visibility: hidden;
+}
+
+.contact .contact_form dl dd label {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 500;
+  padding-left: 55px;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.contact .contact_form dl dd label:last-of-type {
+  margin-bottom: 0;
+}
+
+.contact .contact_form dl dd label:before, .contact .contact_form dl dd label:after {
+  content: "";
+  display: block;
+  border-radius: 100%;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.contact .contact_form dl dd label:before {
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  border: 1px solid #c6dce5;
+  left: 0;
+}
+
+.contact .contact_form dl dd input[type="radio"]:checked + label:after {
+  width: 18px;
+  height: 18px;
+  background-color: #232323;
+  left: 11px;
+}
+
+.contact .contact_form dl dd .pref_select {
+  width: 22%;
+  background-color: #fff;
+  border: 1px solid #c6dce5;
+  border-radius: 5px;
+  position: relative;
+}
+
+.contact .contact_form dl dd .pref_select:after {
+  content: "▼";
+  font-size: 1.2rem;
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.contact .contact_form dl dd .pref_select select {
+  width: 100%;
+  padding: 15px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.contact .contact_form dl dd input[type="number"] {
+  width: 22%;
+  background-color: #fff;
+  padding: 15px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 1px solid #c6dce5;
+  border-radius: 5px;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.contact .contact_form .submit_btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.contact .contact_form .submit_btn a {
+  display: inline-block;
+  font-weight: bold;
+  color: #fff;
+  background-color: #16a8e0;
+  padding: 20px 40px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 30px;
+}
+
+.contact .contact_form .submit_btn a:hover {
+  opacity: .7;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  cursor: pointer;
+}
+
 /* footer */
 /* ============================================ */
 /*# sourceMappingURL=style.css.map */
