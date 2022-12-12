@@ -1338,4 +1338,19 @@ header nav .contact_btn a:hover {
 
 /* footer */
 /* ============================================ */
+footer {
+  text-align: center;
+  background-color: #ceeefb;
+  padding-top: 120px;
+}
+
+footer .copyright {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.4rem;
+  font-weight: bold;
+  letter-spacing: .2rem;
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
 /*# sourceMappingURL=style.css.map */
