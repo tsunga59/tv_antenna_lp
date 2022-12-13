@@ -15,6 +15,9 @@
 }
 .content {
   padding-top: 60px;
+  @include sp {
+    padding-top: 40px;
+  }
   .main_text {
     font-weight: 500;
     line-height: 1.8;

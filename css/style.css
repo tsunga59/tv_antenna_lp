@@ -10,6 +10,15 @@
   display: none;
 }
 
+@media screen and (max-width: 1024px) {
+  .pc {
+    display: none;
+  }
+  .tab {
+    display: block;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .pc {
     display: none;
@@ -56,13 +65,9 @@ section {
   width: 100%;
   max-width: 1000px;
   margin: 0 auto;
-  padding: 6rem 0;
+  padding: 60px 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-}
-
-.container.no-space {
-  padding: 0;
 }
 
 h1 {
@@ -172,7 +177,7 @@ header {
   width: 100%;
   height: 90px;
   background-color: #fff;
-  padding: 16px 70px;
+  padding: 15px 70px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
@@ -181,6 +186,36 @@ header {
   top: 0;
   left: 0;
   z-index: 10;
+}
+
+@media screen and (max-width: 1024px) {
+  header {
+    height: 80px;
+    padding: 15px 40px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  header {
+    height: 60px;
+    padding: 15px 30px;
+  }
+}
+
+header .logo {
+  width: 210px;
+}
+
+@media screen and (max-width: 1024px) {
+  header .logo {
+    width: 180px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  header .logo {
+    width: 150px;
+  }
 }
 
 header nav {
@@ -226,6 +261,18 @@ header nav .contact_btn a:hover {
   cursor: pointer;
 }
 
+@media screen and (max-width: 1024px) {
+  header nav .contact_btn a {
+    padding: 15px 18px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  header nav .contact_btn a {
+    padding: 10px 15px;
+  }
+}
+
 /* top */
 /* ============================================ */
 .top {
@@ -233,8 +280,34 @@ header nav .contact_btn a:hover {
   margin-top: 90px;
 }
 
+@media screen and (max-width: 1024px) {
+  .top {
+    background: url(../images/top_bg_left.png) left 0% top 0%/25% auto no-repeat, url(../images/top_bg_right.png) right 0% top 0%/66% 85% no-repeat;
+    margin-top: 80px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .top {
+    background: url(../images/top_bg_left.png) left 0% top 0%/30% auto no-repeat, url(../images/top_bg_right.png) right 0% top 0%/100% 60% no-repeat;
+    margin-top: 60px;
+  }
+}
+
 .top .container {
   padding: 90px 80px 0;
+}
+
+@media screen and (max-width: 1024px) {
+  .top .container {
+    padding: 60px 60px 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .top .container {
+    padding: 40px 40px 0;
+  }
 }
 
 .top_area {
@@ -250,16 +323,44 @@ header nav .contact_btn a:hover {
   margin-bottom: 50px;
 }
 
+@media screen and (max-width: 1024px) {
+  .top_area {
+    padding-right: 5px;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .top_area {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-bottom: 15px;
+  }
+}
+
 .top_left .main_text {
   font-size: 5.8rem;
   font-weight: 900;
   letter-spacing: .8rem;
   line-height: 1.3;
+  white-space: nowrap;
   margin-bottom: 10px;
+}
+
+@media screen and (max-width: 1024px) {
+  .top_left .main_text {
+    font-size: 5rem;
+  }
 }
 
 .top_left .main_text .small {
   font-size: 5rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .top_left .main_text .small {
+    font-size: 4.2rem;
+  }
 }
 
 .top_left .main_text .blue {
@@ -287,6 +388,19 @@ header nav .contact_btn a:hover {
   border-radius: 30px;
 }
 
+@media screen and (max-width: 1024px) {
+  .top_left .area_list li {
+    padding: 3px 7px;
+    margin-right: 3px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .top_left .area_list li {
+    padding: 2px 5px;
+  }
+}
+
 .top_left .area_list li:last-of-type {
   margin-right: 0;
 }
@@ -301,11 +415,20 @@ header nav .contact_btn a:hover {
 }
 
 .top_right .achievement_list li {
-  margin-right: 12px;
+  margin-left: 12px;
 }
 
-.top_right .achievement_list li:last-of-type {
-  margin-right: 0;
+@media screen and (max-width: 1024px) {
+  .top_right .achievement_list li {
+    margin-left: 6px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .top_right .achievement_list li {
+    width: 31%;
+    margin: 10px 0 0;
+  }
 }
 
 .top .bottom_area {
@@ -323,20 +446,55 @@ header nav .contact_btn a:hover {
   position: relative;
 }
 
+@media screen and (max-width: 1024px) {
+  .top .bottom_area .sub_text {
+    width: 78%;
+    padding: 20px 25px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .top .bottom_area .sub_text {
+    width: 100%;
+    padding: 15px 20px;
+  }
+}
+
 .top .bottom_area .sub_text .title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-weight: 2.5rem;
   font-weight: bold;
+  line-height: 1;
   color: #16a8e0;
   margin-bottom: 15px;
 }
 
+@media screen and (max-width: 1024px) {
+  .top .bottom_area .sub_text .title {
+    margin-bottom: 10px;
+  }
+}
+
 .top .bottom_area .sub_text .title:before {
-  content: url(../images/exclamation_icon.png);
+  content: "";
   display: inline-block;
+  width: 25px;
+  height: 25px;
+  background: url(../images/exclamation_icon.png) center center/contain no-repeat;
   margin-right: 7px;
+}
+
+@media screen and (max-width: 767px) {
+  .top .bottom_area .sub_text .title:before {
+    width: 18px;
+    height: 18px;
+    margin-right: 4px;
+  }
 }
 
 .top .bottom_area .sub_text .text {
@@ -361,6 +519,22 @@ header nav .contact_btn a:hover {
   cursor: pointer;
 }
 
+@media screen and (max-width: 1024px) {
+  .top .bottom_area .contact_banner {
+    width: 20%;
+    right: 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .top .bottom_area .contact_banner {
+    width: 40%;
+    top: auto;
+    bottom: 0;
+    right: -30px;
+  }
+}
+
 /* main */
 /* ============================================ */
 .main_bg1 {
@@ -381,6 +555,12 @@ header nav .contact_btn a:hover {
 
 .content {
   padding-top: 60px;
+}
+
+@media screen and (max-width: 767px) {
+  .content {
+    padding-top: 40px;
+  }
 }
 
 .content .main_text {

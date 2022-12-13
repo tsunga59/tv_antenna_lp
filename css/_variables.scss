@@ -26,14 +26,14 @@ $accentColor: #fff4ac;
 .sp {
     display: none;
 }
-// @include tab {
-//     .pc {
-//         display: none;
-//     }
-//     .tab {
-//         display: block;
-//     }
-// }
+@include tab {
+    .pc {
+        display: none;
+    }
+    .tab {
+        display: block;
+    }
+}
 @include sp {
     // .tab {
     //     display: none;
@@ -74,11 +74,8 @@ section {
     width: 100%;
     max-width: 1000px;
     margin: 0 auto;
-    padding: 6rem 0;
+    padding: 60px 0;
     box-sizing: border-box;
-    &.no-space {
-        padding: 0;
-    }
 }
 h1 {
     width: 1px;

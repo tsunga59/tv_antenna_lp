@@ -7,13 +7,30 @@ header {
   width: 100%;
   height: 90px;
   background-color: $baseColor;
-  padding: 16px 70px;
+  padding: 15px 70px;
   box-sizing: border-box;
   box-shadow: 0 0 20px rgba($color: #000, $alpha: .2);
   position: fixed;
   top: 0;
   left: 0;
   z-index: 10;
+  @include tab {
+    height: 80px;
+    padding: 15px 40px;
+  }
+  @include sp {
+    height: 60px;
+    padding: 15px 30px;
+  }
+  .logo {
+    width: 210px;
+    @include tab {
+      width: 180px;
+    }
+    @include sp {
+      width: 150px;
+    }
+  }
   nav {
     display: flex;
     align-items: center;
@@ -42,6 +59,12 @@ header {
         transition: all .3s ease-in-out;
         cursor: pointer;
         }
+        @include tab {
+          padding: 15px 18px;
+        }
+        @include sp {
+          padding: 10px 15px;
+        }
       }
     }
   }
@@ -53,14 +76,38 @@ header {
   background: url(../images/top_bg_left.png) left 0% top 0% / 25% auto no-repeat,
     url(../images/top_bg_right.png) right 0% bottom 50px / 66% auto no-repeat;
   margin-top: 90px;
+  @include tab {
+    background: url(../images/top_bg_left.png) left 0% top 0% / 25% auto no-repeat,
+    url(../images/top_bg_right.png) right 0% top 0% / 66% 85% no-repeat;
+    margin-top: 80px;
+  }
+  @include sp {
+    background: url(../images/top_bg_left.png) left 0% top 0% / 30% auto no-repeat,
+    url(../images/top_bg_right.png) right 0% top 0% / 100% 60% no-repeat;
+    margin-top: 60px;
+  }
   .container {
     padding: 90px 80px 0;
+    @include tab {
+      padding: 60px 60px 0;
+    }
+    @include sp {
+      padding: 40px 40px 0;
+    }
   }
   &_area {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
     margin-bottom: 50px;
+    @include tab {
+      padding-right: 5px;
+      margin-bottom: 30px;
+    }
+    @include sp {
+      flex-wrap: wrap;
+      margin-bottom: 15px; 
+    }
   }
   &_left {
     .main_text {
@@ -68,9 +115,16 @@ header {
       font-weight: 900;
       letter-spacing: .8rem;
       line-height: 1.3;
+      white-space: nowrap;
       margin-bottom: 10px;
+      @include tab {
+        font-size: 5rem;
+      }
       .small {
         font-size: 5rem;
+        @include tab {
+          font-size: 4.2rem;
+        }
       }
       .blue {
         color: $mainColor;
@@ -89,6 +143,13 @@ header {
         margin-right: 6px;
         box-shadow: 0 0 10px rgba($color: #3d8dac, $alpha: .2);
         border-radius: 30px;
+        @include tab {
+          padding: 3px 7px;
+          margin-right: 3px;
+        }
+        @include sp {
+          padding: 2px 5px;
+        }
         &:last-of-type {
           margin-right: 0;
         }
@@ -100,9 +161,13 @@ header {
       display: flex;
       justify-content: space-between;
       li {
-        margin-right: 12px;
-        &:last-of-type {
-          margin-right: 0;
+        margin-left: 12px;
+        @include tab {
+          margin-left: 6px;
+        }
+        @include sp {
+          width: 31%;
+          margin: 10px 0 0;
         }
       }
     }
@@ -116,16 +181,37 @@ header {
       box-shadow: 0 0 20px rgba($color: #000, $alpha: .2);
       border-radius: 10px;
       position: relative;
+      @include tab {
+        width: 78%;
+        padding: 20px 25px;
+      }
+      @include sp {
+        width: 100%;
+        padding: 15px 20px;
+      }
       .title {
         display: flex;
+        align-items: center;
         font-weight: 2.5rem;
         font-weight: bold;
+        line-height: 1;
         color: $mainColor;
         margin-bottom: 15px;
+        @include tab {
+          margin-bottom: 10px;
+        }
         &:before {
-          content: url(../images/exclamation_icon.png);
+          content: "";
           display: inline-block;
+          width: 25px;
+          height: 25px;
+          background: url(../images/exclamation_icon.png) center center /  contain no-repeat;
           margin-right: 7px;
+          @include sp {
+            width: 18px;
+            height: 18px;
+            margin-right: 4px;
+          }
         }
       }
       .text {
@@ -144,6 +230,19 @@ header {
         opacity: .85;
         transition: all .3s ease-in-out;
         cursor: pointer;
+      }
+      @include tab {
+        width: 20%;
+        right: 0;
+      }
+      @include sp {
+        width: 40%;
+        // top: 98%;
+        // left: 50%;
+        // transform: translateX(-50%);
+        top: auto;
+        bottom: 0;
+        right: -30px;
       }
     }
   }
