@@ -41,7 +41,7 @@ header {
         opacity: .7;
         transition: all .3s ease-in-out;
         cursor: pointer;
-      }
+        }
       }
     }
   }
@@ -51,7 +51,7 @@ header {
 /* ============================================ */
 .top {
   background: url(../images/top_bg_left.png) left 0% top 0% / 25% auto no-repeat,
-    url(../images/top_bg_right.png) right 0% bottom -50% / 66% auto no-repeat;
+    url(../images/top_bg_right.png) right 0% bottom 50px / 66% auto no-repeat;
   margin-top: 90px;
   .container {
     padding: 90px 80px 0;
@@ -131,7 +131,7 @@ header {
       .text {
         font-size: 1.4rem;
         font-weight: 500;
-        letter-spacing: .01rem;
+        letter-spacing: -.03rem;
         line-height: 1.7;
       }
     }

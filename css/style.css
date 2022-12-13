@@ -229,7 +229,7 @@ header nav .contact_btn a:hover {
 /* top */
 /* ============================================ */
 .top {
-  background: url(../images/top_bg_left.png) left 0% top 0%/25% auto no-repeat, url(../images/top_bg_right.png) right 0% bottom -50%/66% auto no-repeat;
+  background: url(../images/top_bg_left.png) left 0% top 0%/25% auto no-repeat, url(../images/top_bg_right.png) right 0% bottom 50px/66% auto no-repeat;
   margin-top: 90px;
 }
 
@@ -342,7 +342,7 @@ header nav .contact_btn a:hover {
 .top .bottom_area .sub_text .text {
   font-size: 1.4rem;
   font-weight: 500;
-  letter-spacing: .01rem;
+  letter-spacing: -.03rem;
   line-height: 1.7;
 }
 
@@ -363,8 +363,24 @@ header nav .contact_btn a:hover {
 
 /* main */
 /* ============================================ */
-.main_bg {
-  background: url(../images/main_bg.png) right 0% top 10%/100% auto no-repeat;
+.main_bg1 {
+  background: url(../images/main_bg1.png) left 0% top 100px/100% 100% no-repeat;
+}
+
+.main_bg2 {
+  background: url(../images/main_bg2.png) left 0% top 320px/100% 100% no-repeat;
+  position: relative;
+}
+
+.main_bg2:after {
+  content: url(../images/bottom_bg.png);
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.content {
+  padding-top: 60px;
 }
 
 .content .main_text {
@@ -711,6 +727,10 @@ header nav .contact_btn a:hover {
   letter-spacing: .01rem;
 }
 
+.case {
+  padding-bottom: 120px;
+}
+
 .case ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -840,6 +860,10 @@ header nav .contact_btn a:hover {
   right: 20px;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
+}
+
+.area {
+  margin-top: -160px;
 }
 
 .area h3.sub_title {
@@ -1109,10 +1133,6 @@ header nav .contact_btn a:hover {
   margin-top: -5px;
 }
 
-.contact {
-  background-color: #ceeefb;
-}
-
 .contact .qr_area {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1223,7 +1243,7 @@ header nav .contact_btn a:hover {
   margin-bottom: 0;
 }
 
-.contact .contact_form dl dd input[type="text"], .contact .contact_form dl dd textarea {
+.contact .contact_form dl dd input[type="text"], .contact .contact_form dl dd input[type="email"], .contact .contact_form dl dd textarea {
   width: 100%;
   background-color: #fff;
   padding: 15px;
@@ -1235,7 +1255,7 @@ header nav .contact_btn a:hover {
   transition: all .3s ease-in-out;
 }
 
-.contact .contact_form dl dd input[type="text"]:focus, .contact .contact_form dl dd textarea:focus {
+.contact .contact_form dl dd input[type="text"]:focus, .contact .contact_form dl dd input[type="email"]:focus, .contact .contact_form dl dd textarea:focus {
   background-color: #f2f2f2;
 }
 
@@ -1248,7 +1268,7 @@ header nav .contact_btn a:hover {
   visibility: hidden;
 }
 
-.contact .contact_form dl dd label {
+.contact .contact_form dl dd .type_label {
   display: block;
   font-size: 1.5rem;
   font-weight: 500;
@@ -1257,11 +1277,11 @@ header nav .contact_btn a:hover {
   position: relative;
 }
 
-.contact .contact_form dl dd label:last-of-type {
+.contact .contact_form dl dd .type_label:last-of-type {
   margin-bottom: 0;
 }
 
-.contact .contact_form dl dd label:before, .contact .contact_form dl dd label:after {
+.contact .contact_form dl dd .type_label:before, .contact .contact_form dl dd .type_label:after {
   content: "";
   display: block;
   border-radius: 100%;
@@ -1271,7 +1291,7 @@ header nav .contact_btn a:hover {
           transform: translateY(-50%);
 }
 
-.contact .contact_form dl dd label:before {
+.contact .contact_form dl dd .type_label:before {
   width: 40px;
   height: 40px;
   background-color: #fff;
@@ -1279,7 +1299,7 @@ header nav .contact_btn a:hover {
   left: 0;
 }
 
-.contact .contact_form dl dd input[type="radio"]:checked + label:after {
+.contact .contact_form dl dd input[type="radio"]:checked + .type_label:after {
   width: 18px;
   height: 18px;
   background-color: #232323;
@@ -1324,6 +1344,11 @@ header nav .contact_btn a:hover {
   transition: all .3s ease-in-out;
 }
 
+.contact .contact_form dl dd .error {
+  color: red;
+  cursor: default;
+}
+
 .contact .contact_form .submit_btn {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1334,7 +1359,7 @@ header nav .contact_btn a:hover {
   text-align: center;
 }
 
-.contact .contact_form .submit_btn a {
+.contact .contact_form .submit_btn input {
   display: inline-block;
   font-weight: bold;
   color: #fff;
@@ -1345,7 +1370,57 @@ header nav .contact_btn a:hover {
   border-radius: 30px;
 }
 
-.contact .contact_form .submit_btn a:hover {
+.contact .contact_form .submit_btn input:hover {
+  opacity: .7;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  cursor: pointer;
+}
+
+.thanks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 90px;
+  text-align: center;
+}
+
+.thanks .main_text {
+  font-size: 2.4rem;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+.thanks .sub_text {
+  font-size: 1.8rem;
+  margin-bottom: 60px;
+}
+
+.thanks .back_btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.thanks .back_btn a {
+  display: inline-block;
+  font-weight: bold;
+  color: #fff;
+  background-color: #16a8e0;
+  padding: 15px 40px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 30px;
+}
+
+.thanks .back_btn a:hover {
   opacity: .7;
   -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
@@ -1356,7 +1431,6 @@ header nav .contact_btn a:hover {
 /* ============================================ */
 footer {
   text-align: center;
-  background-color: #ceeefb;
   padding-top: 120px;
 }
 

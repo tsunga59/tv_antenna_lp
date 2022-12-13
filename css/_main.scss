@@ -1,9 +1,20 @@
 /* main */
 /* ============================================ */
-.main_bg {
-  background: url(../images/main_bg.png) right 0% top 10% / 100% auto no-repeat;
+.main_bg1 {
+  background: url(../images/main_bg1.png) left 0% top 100px / 100% 100% no-repeat;
+}
+.main_bg2 {
+  background: url(../images/main_bg2.png) left 0% top 320px / 100% 100% no-repeat;
+  position: relative;
+  &:after {
+    content: url(../images/bottom_bg.png);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
 }
 .content {
+  padding-top: 60px;
   .main_text {
     font-weight: 500;
     line-height: 1.8;
@@ -261,6 +272,7 @@
 }
 
 .case {
+  padding-bottom: 120px;
   ul {
     display: flex;
     justify-content: space-between;
@@ -356,6 +368,7 @@
 }
 
 .area {
+  margin-top: -160px;
   h3.sub_title {
     margin-bottom: 30px;
   }
@@ -568,7 +581,6 @@
 }
 
 .contact {
-  background-color: #ceeefb;
   .qr_area {
     display: flex;
     justify-content: space-between;
@@ -642,7 +654,7 @@
         &:last-of-type {
           margin-bottom: 0;
         }
-        input[type="text"], textarea {
+        input[type="text"], input[type="email"], textarea {
           width: 100%;
           background-color: $baseColor;
           padding: 15px;
@@ -661,7 +673,7 @@
           position: absolute;
           visibility: hidden;
         }
-        label {
+        .type_label {
           display: block;
           font-size: 1.5rem;
           font-weight: 500;
@@ -687,7 +699,7 @@
             left: 0;
           }
         }
-        input[type="radio"]:checked + label:after {
+        input[type="radio"]:checked + .type_label:after {
           width: 18px;
           height: 18px;
           background-color: $fontColor;
@@ -723,13 +735,18 @@
           border-radius: 5px;
           transition: all .3s ease-in-out;
         }
+        // jquery validation
+        .error {
+          color: red;
+          cursor: default;
+        }
       }
     }
     .submit_btn {
       display: flex;
       justify-content: center;
       text-align: center;
-      a {
+      input {
         display: inline-block;
         font-weight: bold;
         color: $baseColor;
@@ -742,6 +759,41 @@
           transition: all .3s ease-in-out;
           cursor: pointer;
         }
+      }
+    }
+  }
+}
+
+.thanks {
+  display: flex;
+  align-items: center;
+  margin-top: 90px;
+  text-align: center;
+  .main_text {
+    font-size: 2.4rem;
+    font-weight: 500;
+    margin-bottom: 30px;
+  }
+  .sub_text {
+    font-size: 1.8rem;
+    margin-bottom: 60px;
+  }
+  .back_btn {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    a {
+      display: inline-block;
+      font-weight: bold;
+      color: $baseColor;
+      background-color: $mainColor;
+      padding: 15px 40px;
+      box-sizing: border-box;
+      border-radius: 30px;
+      &:hover {
+        opacity: .7;
+        transition: all .3s ease-in-out;
+        cursor: pointer;
       }
     }
   }

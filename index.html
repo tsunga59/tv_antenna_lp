@@ -9,8 +9,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Zen+Kaku+Gothic+New:wght@400;500;700;900&display=swap" rel="stylesheet">
     <!-- css -->
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/reset.css" media="all">
+    <link rel="stylesheet" type="text/css" href="css/style.css" media="all">
     <title>アンテナ工事専門店 大成アンテナ</title>
 </head>
 <body>
@@ -38,7 +38,7 @@
             <li><img src="images/discover-logomark-img-06.png" alt="DISCOVER"></li>
         </ul>
         <div class="contact_btn">
-            <a href="#">アンテナ工事を依頼する</a>
+            <a href="#contact">アンテナ工事を依頼する</a>
         </div>
     </nav>
 </header>
@@ -90,7 +90,8 @@
 <!-- main -->
 <main>
 
-    <div class="main_bg">
+<!-- main_bg1 -->
+<div class="main_bg1">
 
     <!-- content -->
     <section class="content">
@@ -197,7 +198,6 @@
             </ul>
         </div>
     </section>
-
 
     <!-- point -->
     <section class="point">
@@ -372,6 +372,11 @@
         </div>
     </section>
 
+</div>
+
+<!-- main_bg2 -->
+<div class="main_bg2">
+
     <!-- area -->
     <section class="area">
         <div class="container">
@@ -408,8 +413,6 @@
             </ul>
         </div>
     </section>
-
-    </div>
 
     <!-- flow -->
     <section class="flow">
@@ -551,7 +554,7 @@
     </section>
 
     <!-- contact -->
-    <section class="contact">
+    <section class="contact" id="contact">
         <div class="container">
             <h2 class="sub_title">
                 <span class="decorate">アンテナ設置の</span>
@@ -565,29 +568,29 @@
                 </div>
                 <img src="images/line_qr.png" alt="" class="line_qr">
             </div>
-            <form action="" class="contact_form">
+            <form name="form01" action="mail.php#form" method="post" class="contact_form">
                 <dl>
                     <dt>お名前<span class="must">必須</span></dt>
-                    <dd><input type="text" required></dd>
+                    <dd><input type="text" name="お名前" requiredName></dd>
                     <dt>電話番号<span class="must">必須</span></dt>
-                    <dd><input type="text" required></dd>
+                    <dd><input type="text" name="電話番号" requiredTel></dd>
                     <dt>メールアドレス<span class="must">必須</span></dt>
-                    <dd><input type="text" required></dd>
+                    <dd><input type="email" name="メールアドレス" data-rule-custom-email="1" requiredEmail></dd>
                     <dt class="vertical_top">取り付けタイプ</dt>
                     <dd>
-                        <input type="radio" id="type1" name="type" value="地デジ：UHFアンテナ ブースターセット" checked>
-                        <label for="type1">地デジ：UHFアンテナ ブースターセット</label>
-                        <input type="radio" id="type2" name="type" value="地デジ：デザインアンテナ ブースターセット">
-                        <label for="type2">地デジ：デザインアンテナ ブースターセット</label>
-                        <input type="radio" id="type3" name="type" value="地デジ+BS/CS：UHFアンテナ 混合ブースターセット">
-                        <label for="type3">地デジ+BS/CS：UHFアンテナ 混合ブースターセット</label>
-                        <input type="radio" id="type4" name="type" value="地デジ+BS/CS：デザインアンテナ 混合ブースターセット">
-                        <label for="type4">地デジ+BS/CS：デザインアンテナ 混合ブースターセット</label>
+                        <input type="radio" id="type1" name="取り付けタイプ" value="地デジ：UHFアンテナ ブースターセット" checked>
+                        <label for="type1" class="type_label">地デジ：UHFアンテナ ブースターセット</label>
+                        <input type="radio" id="type2" name="取り付けタイプ" value="地デジ：デザインアンテナ ブースターセット">
+                        <label for="type2" class="type_label">地デジ：デザインアンテナ ブースターセット</label>
+                        <input type="radio" id="type3" name="取り付けタイプ" value="地デジ+BS/CS：UHFアンテナ 混合ブースターセット">
+                        <label for="type3" class="type_label">地デジ+BS/CS：UHFアンテナ 混合ブースターセット</label>
+                        <input type="radio" id="type4" name="取り付けタイプ" value="地デジ+BS/CS：デザインアンテナ 混合ブースターセット">
+                        <label for="type4" class="type_label">地デジ+BS/CS：デザインアンテナ 混合ブースターセット</label>
                     </dd>
                     <dt>都道府県</dt>
                     <dd>
                         <div class="pref_select">
-                            <select name="prefecture">
+                            <select name="都道府県">
                                 <option value="北海道">北海道</option>
                                 <option value="青森県">青森県</option>
                                 <option value="岩手県">岩手県</option>
@@ -639,14 +642,14 @@
                         </div>
                     </dd>
                     <dt>住所</dt>
-                    <dd><input type="text"></dd>
+                    <dd><input type="text" name="住所"></dd>
                     <dt>築年数</dt>
-                    <dd><input type="number"></dd>
+                    <dd><input type="number" name="築年数"></dd>
                     <dt class="vertical_top">備考</dt>
-                    <dd><textarea></textarea></dd>
+                    <dd><textarea name="備考"></textarea></dd>
                 </dl>
                 <div class="submit_btn">
-                    <a href="#">入力内容を送信する</a>
+                    <input type="submit" value="入力内容を送信する">
                 </div>
             </form>
         </div>
@@ -657,11 +660,15 @@
         <p class="copyright">Copyright (C) All Rights Reserved.</p>
     </footer>
 
+</div>
+
 </main>
     
 <!-- javascript -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="js/main.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<!-- <script type="text/javascript" src="js/jquery.min.js"></script> -->
+<script type="text/javascript" src="js/jquery.validate.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
 
 </body>
 </html>
