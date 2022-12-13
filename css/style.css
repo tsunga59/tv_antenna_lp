@@ -61,6 +61,10 @@ section {
           box-sizing: border-box;
 }
 
+.container.no-space {
+  padding: 0;
+}
+
 h1 {
   width: 1px;
   height: 1px;
@@ -225,7 +229,7 @@ header nav .contact_btn a:hover {
 /* top */
 /* ============================================ */
 .top {
-  background: url(../images/top_bg_left.png) left 0% top 0%/25% auto no-repeat, url(../images/top_bg_right.png) right 0% bottom -40%/64% auto no-repeat;
+  background: url(../images/top_bg_left.png) left 0% top 0%/25% auto no-repeat, url(../images/top_bg_right.png) right 0% bottom -50%/66% auto no-repeat;
   margin-top: 90px;
 }
 
@@ -359,10 +363,14 @@ header nav .contact_btn a:hover {
 
 /* main */
 /* ============================================ */
+.main_bg {
+  background: url(../images/main_bg.png) right 0% top 10%/100% auto no-repeat;
+}
+
 .content .main_text {
   font-weight: 500;
   line-height: 1.8;
-  margin-bottom: 40px;
+  margin-bottom: 50px;
 }
 
 .content .content_list {

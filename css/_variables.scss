@@ -76,6 +76,9 @@ section {
     margin: 0 auto;
     padding: 6rem 0;
     box-sizing: border-box;
+    &.no-space {
+        padding: 0;
+    }
 }
 h1 {
     width: 1px;
