@@ -160,6 +160,10 @@ img {
   .container {
     padding: 40px 20px;
   }
+  h2.sub_title {
+    font-size: 3.8rem;
+    margin-bottom: 30px;
+  }
 }
 
 /* header */
@@ -593,6 +597,21 @@ header nav .contact_btn a:hover {
   border-radius: 10px;
 }
 
+@media screen and (max-width: 1024px) {
+  .content .content_list li {
+    width: 75%;
+    height: 130px;
+    margin: 0 auto 15px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .content .content_list li {
+    width: 100%;
+    height: 120px;
+  }
+}
+
 .content .content_list li .tag_area {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -645,6 +664,18 @@ header nav .contact_btn a:hover {
           box-sizing: border-box;
 }
 
+@media screen and (max-width: 1024px) {
+  .content .content_list li .content_area {
+    padding: 15px 20px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .content .content_list li .content_area {
+    padding: 15px 10px;
+  }
+}
+
 .content .content_list li .content_area .name {
   font-size: 2.2rem;
   font-weight: bold;
@@ -656,6 +687,8 @@ header nav .contact_btn a:hover {
   font-size: 1.8rem;
   font-weight: bold;
   line-height: 1;
+  text-align: right;
+  white-space: nowrap;
   width: 49%;
   padding-bottom: 10px;
   position: relative;
@@ -667,12 +700,18 @@ header nav .contact_btn a:hover {
   font-weight: 500;
 }
 
+@media screen and (max-width: 1024px) {
+  .content .content_list li .content_area .price .large {
+    font-size: 4rem;
+  }
+}
+
 .content .content_list li .content_area .price .small {
   font-size: 1.2rem;
   font-weight: normal;
   position: absolute;
   bottom: -10px;
-  left: 0;
+  right: 0;
 }
 
 .content .price_content {
@@ -685,19 +724,46 @@ header nav .contact_btn a:hover {
   border-radius: 10px;
 }
 
+@media screen and (max-width: 1024px) {
+  .content .price_content {
+    width: 75%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .content .price_content {
+    width: 100%;
+    padding: 20px;
+  }
+}
+
 .content .price_content .title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-size: 1.8rem;
   font-weight: bold;
+  line-height: 1;
   margin-bottom: 20px;
 }
 
+@media screen and (max-width: 1024px) {
+  .content .price_content .title {
+    margin-bottom: 15px;
+  }
+}
+
 .content .price_content .title:before {
-  content: url(../images/price_content_icon.png);
+  content: "";
   display: inline-block;
-  margin-right: 10px;
+  width: 25px;
+  height: 25px;
+  background: url(../images/price_content_icon.png) center center/contain no-repeat;
+  margin-right: 7px;
 }
 
 .content .price_content ul {
@@ -707,6 +773,9 @@ header nav .contact_btn a:hover {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
@@ -720,6 +789,12 @@ header nav .contact_btn a:hover {
           box-sizing: border-box;
   margin-bottom: 10px;
   position: relative;
+}
+
+@media screen and (max-width: 1024px) {
+  .content .price_content ul li {
+    width: 100%;
+  }
 }
 
 .content .price_content ul li:before {
@@ -737,6 +812,12 @@ header nav .contact_btn a:hover {
 
 .content .price_content ul li:nth-of-type(even) {
   width: 40%;
+}
+
+@media screen and (max-width: 1024px) {
+  .content .price_content ul li:nth-of-type(even) {
+    width: 100%;
+  }
 }
 
 .trouble ul {
@@ -1612,6 +1693,8 @@ header nav .contact_btn a:hover {
 footer {
   text-align: center;
   padding-top: 120px;
+  position: relative;
+  z-index: 2;
 }
 
 footer .copyright {

@@ -3,6 +3,8 @@
 footer {
   text-align: center;
   padding-top: 120px;
+  position: relative;
+  z-index: 2;
   .copyright {
     font-family: 'Oswald', sans-serif;
     font-size: 1.4rem;
