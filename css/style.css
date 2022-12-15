@@ -1369,6 +1369,12 @@ header nav .contact_btn a:hover {
           box-sizing: border-box;
 }
 
+@media screen and (max-width: 767px) {
+  .flow ul {
+    padding: 0 0 0 60px;
+  }
+}
+
 .flow ul.free {
   margin-bottom: 20px;
   position: relative;
@@ -1397,6 +1403,12 @@ header nav .contact_btn a:hover {
   left: 0;
 }
 
+@media screen and (max-width: 767px) {
+  .flow ul.free:before {
+    padding: 5px;
+  }
+}
+
 .flow ul li {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1407,7 +1419,9 @@ header nav .contact_btn a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 140px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  min-height: 150px;
   background-color: #fff;
   padding: 30px 40px;
   -webkit-box-sizing: border-box;
@@ -1418,6 +1432,20 @@ header nav .contact_btn a:hover {
   border-radius: 10px;
   position: relative;
   overflow: hidden;
+}
+
+@media screen and (max-width: 1024px) {
+  .flow ul li {
+    min-height: 160px;
+    padding: 30px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .flow ul li {
+    min-height: 170px;
+    padding: 20px;
+  }
 }
 
 .flow ul li:last-of-type {
@@ -1436,13 +1464,42 @@ header nav .contact_btn a:hover {
           transform: skewX(-35deg);
 }
 
+@media screen and (max-width: 1024px) {
+  .flow ul li:before {
+    width: 180px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .flow ul li:before {
+    width: 80px;
+    left: -80px;
+  }
+}
+
 .flow ul li .step_title {
   font-family: 'Oswald', sans-serif;
   font-size: 3.5rem;
   font-weight: 500;
+  line-height: 1;
+  white-space: nowrap;
   width: 19%;
   color: #16a8e0;
+  padding-bottom: 5px;
   z-index: 1;
+}
+
+@media screen and (max-width: 1024px) {
+  .flow ul li .step_title {
+    width: 25%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .flow ul li .step_title {
+    width: 100%;
+    padding-bottom: 10px;
+  }
 }
 
 .flow ul li .step_title .large {
@@ -1453,11 +1510,29 @@ header nav .contact_btn a:hover {
   width: 78%;
 }
 
+@media screen and (max-width: 1024px) {
+  .flow ul li .text_area {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .flow ul li .text_area {
+    width: 100%;
+  }
+}
+
 .flow ul li .text_area .title {
   font-size: 2.2rem;
   font-weight: bold;
   letter-spacing: .01rem;
   margin-bottom: 10px;
+}
+
+@media screen and (max-width: 767px) {
+  .flow ul li .text_area .title {
+    margin-bottom: 5px;
+  }
 }
 
 .flow ul li .text_area .text {
