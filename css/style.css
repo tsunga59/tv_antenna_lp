@@ -1127,6 +1127,15 @@ header nav .contact_btn a:hover {
   margin-bottom: 20px;
 }
 
+@media screen and (max-width: 1024px) {
+  .case ul {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 30px;
+  }
+}
+
 .case ul li {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1143,13 +1152,36 @@ header nav .contact_btn a:hover {
   border-radius: 10px;
 }
 
+@media screen and (max-width: 1024px) {
+  .case ul li {
+    width: 75%;
+    height: 270px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .case ul li {
+    width: 100%;
+    height: auto;
+    min-height: 230px;
+  }
+}
+
 .case ul li:last-of-type {
   margin-bottom: 0;
 }
 
 .case ul li img {
   width: 43%;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 10px 0 0 10px;
+}
+
+@media screen and (max-width: 767px) {
+  .case ul li img {
+    width: 40%;
+  }
 }
 
 .case ul li .text_area {
@@ -1163,10 +1195,17 @@ header nav .contact_btn a:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 55%;
+  width: 57%;
   padding: 30px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+@media screen and (max-width: 767px) {
+  .case ul li .text_area {
+    width: 60%;
+    padding: 20px;
+  }
 }
 
 .case ul li .text_area .name {
@@ -1213,6 +1252,14 @@ header nav .contact_btn a:hover {
       -ms-flex-pack: end;
           justify-content: flex-end;
   text-align: center;
+}
+
+@media screen and (max-width: 1024px) {
+  .case .more_btn {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .case .more_btn a {
