@@ -254,25 +254,37 @@
       background-image: linear-gradient(125deg, $mainColor 160px, transparent 0);
       padding: 50px 40px;
       box-sizing: border-box;
-      margin-bottom: 60px;
+      margin-top: 70px;
       box-shadow: 0 0 20px rgba($color: #000, $alpha: .2);
       border-radius: 10px;
       position: relative;
-      &:last-of-type {
-        margin-bottom: 0;
+      @include tab {
+        padding: 40px 30px;
+      }
+      @include sp {
+        background-image: linear-gradient(125deg, $mainColor 60px, transparent 0);        
+        padding: 30px 20px;
+        margin-top: 60px;
       }
       &:before {
-        content: url(../images/point_title1.png);
+        content: "";
+        display: inline-block;
+        width: 160px;
+        height: 60px;
+        background: url(../images/point_title1.png) center center / contain no-repeat;
         position: absolute;
         top: -40px;
         left: 50%;
         transform: translateX(-50%);
+        @include sp {
+          width: 130px;
+        }
       }
       &:nth-of-type(2):before {
-        content: url(../images/point_title2.png);
+        background-image: url(../images/point_title2.png);
       }
       &:nth-of-type(3):before {
-        content: url(../images/point_title3.png);
+        background-image: url(../images/point_title3.png);
       }
       .sub_title {
         font-size: 2.6rem;
@@ -280,6 +292,9 @@
         letter-spacing: .01rem;
         text-align: center;
         margin-bottom: 30px;
+        @include sp {
+          margin-bottom: 20px;
+        }
         .large {
           font-family: 'Oswald', sans-serif;
           font-size: 3.6rem;
@@ -292,17 +307,29 @@
         align-items: center;
         flex-wrap: wrap;
         margin-bottom: 30px;
+        @include sp {
+          justify-content: center;
+          margin-bottom: 20px;
+        }
         img {
           width: 48%;
           height: 280px;
           object-fit: cover;
           border-radius: 5px;
+          @include sp {
+            width: 75%;
+            height: 150px;
+            margin-bottom: 10px;
+          }
         }
         p {
           font-weight: 500;
           line-height: 1.8;
           letter-spacing: .03rem;
           width: 48%;
+          @include sp {
+            width: 100%;
+          }
           .blue_marker {
             font-weight: bold;
           }
@@ -318,20 +345,33 @@
         box-sizing: border-box;
         border: 4px solid #e4f8ff;
         border-radius: 5px;
+        @include sp {
+          justify-content: center;
+          padding: 20px;
+        }
         img {
           width: 20%;
-          height: 170px;
           object-fit: cover;
           border-radius: 50%;
           border: 4px solid #e4f8ff;
+          @include sp {
+            width: 50%;
+            margin-bottom: 15px;  
+          }
         }
         .text_area {
           width: 76%;
+          @include sp {
+            width: 100%;
+          }
           .title {
             font-size: 1.8rem;
             font-weight: bold;
             color: $mainColor;
             margin-bottom: 10px;
+            @include sp {
+              text-align: center;
+            }
           }
           .text {
             font-weight: 500;
