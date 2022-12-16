@@ -35,9 +35,9 @@ $accentColor: #fff4ac;
     }
 }
 @include sp {
-    // .tab {
-    //     display: none;
-    // }
+    .tab {
+        display: none;
+    }
     .pc {
         display: none;
     }

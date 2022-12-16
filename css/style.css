@@ -20,6 +20,9 @@
 }
 
 @media screen and (max-width: 767px) {
+  .tab {
+    display: none;
+  }
   .pc {
     display: none;
   }
@@ -201,8 +204,8 @@ header {
 
 @media screen and (max-width: 767px) {
   header {
-    height: 60px;
-    padding: 15px 30px;
+    height: 70px;
+    padding: 15px 20px;
   }
 }
 
@@ -218,7 +221,7 @@ header .logo {
 
 @media screen and (max-width: 767px) {
   header .logo {
-    width: 150px;
+    width: 130px;
   }
 }
 
@@ -235,15 +238,42 @@ header nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin-right: 20px;
 }
 
+@media screen and (max-width: 1024px) {
+  header nav ul {
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  header nav ul {
+    display: none;
+  }
+}
+
 header nav ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-right: 10px;
 }
 
 header nav ul li:last-of-type {
   margin-right: 0;
+}
+
+header nav .card_img {
+  width: 100px;
 }
 
 header nav .contact_btn a {
@@ -265,18 +295,6 @@ header nav .contact_btn a:hover {
   cursor: pointer;
 }
 
-@media screen and (max-width: 1024px) {
-  header nav .contact_btn a {
-    padding: 15px 18px;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  header nav .contact_btn a {
-    padding: 10px 15px;
-  }
-}
-
 /* top */
 /* ============================================ */
 .top {
@@ -293,8 +311,8 @@ header nav .contact_btn a:hover {
 
 @media screen and (max-width: 767px) {
   .top {
-    background: url(../images/top_bg_left.png) left 0% top 0%/30% auto no-repeat, url(../images/top_bg_right.png) right 0% top 0%/100% 60% no-repeat;
-    margin-top: 60px;
+    background: url(../images/top_bg_left.png) left 0% top 0%/25% auto no-repeat, url(../images/top_bg_right.png) right -100px top 0%/100% 40% no-repeat;
+    margin-top: 70px;
   }
 }
 
@@ -310,7 +328,10 @@ header nav .contact_btn a:hover {
 
 @media screen and (max-width: 767px) {
   .top .container {
-    padding: 40px 40px 0;
+    padding: 40px;
+  }
+  .top .container.sp {
+    background-color: #f4fcff;
   }
 }
 
@@ -329,16 +350,13 @@ header nav .contact_btn a:hover {
 
 @media screen and (max-width: 1024px) {
   .top_area {
-    padding-right: 5px;
     margin-bottom: 30px;
   }
 }
 
 @media screen and (max-width: 767px) {
   .top_area {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
   }
 }
 
@@ -375,6 +393,14 @@ header nav .contact_btn a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media screen and (max-width: 767px) {
+  .top_left .area_list {
+    max-width: 280px;
+  }
 }
 
 .top_left .area_list li {
@@ -401,7 +427,9 @@ header nav .contact_btn a:hover {
 
 @media screen and (max-width: 767px) {
   .top_left .area_list li {
-    padding: 2px 5px;
+    font-size: 2rem;
+    padding: 5px 13px;
+    margin: 0 5px 5px 0;
   }
 }
 
@@ -460,7 +488,11 @@ header nav .contact_btn a:hover {
 @media screen and (max-width: 767px) {
   .top .bottom_area .sub_text {
     width: 100%;
-    padding: 15px 20px;
+    background: none;
+    padding: 0;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    border-radius: 0;
   }
 }
 
@@ -484,6 +516,12 @@ header nav .contact_btn a:hover {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .top .bottom_area .sub_text .title {
+    font-size: 2rem;
+  }
+}
+
 .top .bottom_area .sub_text .title:before {
   content: "";
   display: inline-block;
@@ -495,8 +533,8 @@ header nav .contact_btn a:hover {
 
 @media screen and (max-width: 767px) {
   .top .bottom_area .sub_text .title:before {
-    width: 18px;
-    height: 18px;
+    width: 20px;
+    height: 20px;
     margin-right: 4px;
   }
 }
@@ -508,9 +546,16 @@ header nav .contact_btn a:hover {
   line-height: 1.7;
 }
 
+@media screen and (max-width: 767px) {
+  .top .bottom_area .sub_text .text {
+    font-size: 2rem;
+  }
+}
+
 .top .bottom_area .contact_banner {
-  -webkit-box-shadow: 0 0 20px rgba(61, 141, 172, 0.2);
-          box-shadow: 0 0 20px rgba(61, 141, 172, 0.2);
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
   position: absolute;
   top: 0;
   right: -210px;
@@ -532,10 +577,8 @@ header nav .contact_btn a:hover {
 
 @media screen and (max-width: 767px) {
   .top .bottom_area .contact_banner {
-    width: 40%;
-    top: auto;
-    bottom: 0;
-    right: -30px;
+    width: 100%;
+    position: initial;
   }
 }
 
