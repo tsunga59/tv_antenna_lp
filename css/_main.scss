@@ -7,10 +7,22 @@
   background: url(../images/main_bg2.png) left 0% top 320px / 100% 100% no-repeat;
   position: relative;
   &:after {
-    content: url(../images/bottom_bg.png);
+    content: "";
+    display: inline-block;
+    width: 380px;
+    height: 510px;
+    background: url(../images/bottom_bg.png) center center / 100% 100% no-repeat;
     position: absolute;
     bottom: 0;
     right: 0;
+    @include tab {
+      width: 260px;
+      height: 360px;
+    }
+    @include sp {
+      width: 180px;
+      height: 260px;
+    }
   }
 }
 .content {
@@ -804,6 +816,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
     width: 72%;
     background-color: $baseColor;
     padding: 40px;
@@ -811,11 +824,26 @@
     margin: 0 auto 90px;
     box-shadow: 0 0 20px rgba($color: #000, $alpha: .2);
     border-radius: 10px;
+    @include tab {
+      width: 75%;
+      padding: 30px;
+    }
+    @include sp {
+      justify-content: center;
+      margin-bottom: 60px;
+    }
     .text_area {
       width: 70%;
+      @include sp {
+        width: 100%;
+        order: 2;
+      }
       .line_title {
         width: 300px;
         margin-bottom: 10px;
+        @include sp {
+          width: 100%;
+        }
       }
       span {
         display: inline-block;
@@ -827,6 +855,10 @@
         box-sizing: border-box;
         margin-bottom: 15px;
         border-radius: 30px;
+        @include sp {
+          line-height: 1.3;
+          text-align: center;
+        }
       }
       p {
         font-size: 1.4rem;
@@ -836,6 +868,11 @@
     }
     .line_qr {
       width: 24%;
+      @include sp {
+        width: 50%;
+        margin-bottom: 10px;
+        order: 1;
+      }
     }
   }
   .contact_form {
@@ -845,6 +882,12 @@
       align-items: center;
       flex-wrap: wrap;
       margin-bottom: 60px;
+      @include tab {
+        margin-bottom: 50px;
+      }
+      @include sp {
+        margin-bottom: 40px;
+      }
       dt {
         display: flex;
         justify-content: space-between;
@@ -854,6 +897,14 @@
         letter-spacing: .2rem;
         width: 22%;
         margin-bottom: 30px;
+        @include tab {
+          width: 28%;
+          margin-bottom: 10px;
+        }
+        @include sp {
+          justify-content: flex-start;
+          width: 100%;
+        }
         &.vertical_top {
           align-self: flex-start;
         }
@@ -865,11 +916,21 @@
           padding: 5px 10px;
           box-sizing: border-box;
           border-radius: 30px;
+          @include sp {
+            margin-left: 20px;
+          }
         }
       }
       dd {
         width: 76%;
         margin-bottom: 40px;
+        @include tab {
+          width: 70%;
+        }
+        @include sp {
+          width: 100%;
+          margin-bottom: 20px;
+        }
         &:last-of-type {
           margin-bottom: 0;
         }
@@ -899,8 +960,18 @@
           padding-left: 55px;
           margin-bottom: 30px;
           position: relative;
+          @include sp {
+            padding-left: 40px;
+            margin-bottom: 20px;
+            &:first-of-type {
+              margin-top: 10px;
+            }
+          }
           &:last-of-type {
             margin-bottom: 0;
+            @include sp {
+              margin-bottom: 10px;
+            }
           }
           &:before, &:after {
             content: "";
@@ -916,6 +987,10 @@
             background-color: $baseColor;
             border: 1px solid #c6dce5;
             left: 0;
+            @include sp {
+              width: 30px;
+              height: 30px;
+            }
           }
         }
         input[type="radio"]:checked + .type_label:after {
@@ -923,6 +998,11 @@
           height: 18px;
           background-color: $fontColor;
           left: 11px;
+          @include sp {
+            width: 12px;
+            height: 12px;
+            left: 9px;
+          }
         }
         .pref_select {
           width: 22%;
@@ -930,6 +1010,9 @@
           border: 1px solid #c6dce5;
           border-radius: 5px;
           position: relative;
+          @include sp {
+            width: 35%;
+          }
           &:after {
             content: "▼";
             font-size: 1.2rem;
@@ -953,6 +1036,9 @@
           border: 1px solid #c6dce5;
           border-radius: 5px;
           transition: all .3s ease-in-out;
+          @include sp {
+            width: 35%;
+          }
         }
         // jquery validation
         .error {
