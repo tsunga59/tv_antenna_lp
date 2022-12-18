@@ -748,7 +748,7 @@
           font-size: 1.4rem;
           font-weight: 500;
           line-height: 1.6;
-          letter-spacing: -.01rem;
+          letter-spacing: -.05rem;
         }
       }
       .pickup_area {
@@ -793,17 +793,17 @@
           }
         }
         .text {
-          display: inline;
           font-size: 1.6rem;
           font-weight: bold;
-          line-height: 2.2;
-          letter-spacing: -.01rem;
-          padding-bottom: 5px;
-          box-sizing: border-box;
-          border-bottom: 1px solid #aee5fc;
-          &.fake {
-            display: block;
-            margin-top: -5px;
+          line-height: 2.3;
+          letter-spacing: -.05rem;
+          height: calc(100% - 40px);
+          background-image: repeating-linear-gradient(180deg, $baseColor, $baseColor calc(1.6rem * 2.3 - 1px), #aee5fc calc(1.6rem * 2.3 - 1px), #aee5fc calc(1.6rem * 2.3));
+          @include tab {
+            height: calc(100% - 30px);
+          }
+          @include sp {
+            height: calc(100% - 20px);
           }
         }
       }
