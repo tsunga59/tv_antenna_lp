@@ -3,10 +3,10 @@
 /* 色コード */
 /* ============================================ */
 $baseColor: #fff;
-$fontColor: #333;
-$mainColor: #006F4F;
-$subColor: #6EB52C;
-$accentColor: orange;
+$fontColor: #232323;
+$mainColor: #16a8e0;
+$subColor: #187cd0;
+$accentColor: #fff4ac;
 
 /* ブレイクポイント */
 /* ============================================ */
@@ -26,18 +26,18 @@ $accentColor: orange;
 .sp {
     display: none;
 }
-// @include tab {
-//     .pc {
-//         display: none;
-//     }
-//     .tab {
-//         display: block;
-//     }
-// }
+@include tab {
+    .pc {
+        display: none;
+    }
+    .tab {
+        display: block;
+    }
+}
 @include sp {
-    // .tab {
-    //     display: none;
-    // }
+    .tab {
+        display: none;
+    }
     .pc {
         display: none;
     }
@@ -58,7 +58,7 @@ html {
     }
 }
 body {
-    font-family: 'Noto Sans JP', "游ゴシック体", sans-serif;
+    font-family: 'Zen Kaku Gothic New', sans-serif;
     font-size: 1.6rem;
     letter-spacing: 0.05rem;
     line-height: 1.5;
@@ -68,8 +68,7 @@ body {
 }
 section {
     width: 100%;
-    min-height: 50vh;
-    box-shadow: 0 0 5px #000;
+    height: 100%;
 }
 .container {
     width: 100%;
@@ -85,9 +84,62 @@ h1 {
     visibility: hidden;
     position: absolute;
 }
-
+h2.sub_title {
+    font-size: 4.5rem;
+    font-weight: bold;
+    line-height: 1.4;
+    text-align: center;
+    margin-bottom: 50px;
+    .decorate {
+        display: block;
+        font-size: 2.5rem;
+        position: relative;
+        &:before, &:after {
+            content: "";
+            display: inline-block;
+            width: 7px;
+            height: 2rem;
+            margin: 0 15px;
+            background-color: #aee5fc;
+            transform: skewX(-35deg);
+        }
+    }
+    .small {
+        font-size: 3.8rem;
+    }
+}
+h3.sub_title {
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 50px;
+    position: relative;
+    &:before, &:after {
+        content: "";
+        display: inline-block;
+        width: 7px;
+        height: 2.5rem;
+        margin: 0 15px;
+        background-color: #aee5fc;
+        transform: skewX(-35deg);
+    }
+}
 img {
     width: 100%;
+}
+.blue_marker {
+    text-decoration: underline;
+    text-decoration-thickness: .8rem;
+    text-decoration-color: #d9f3fd;
+    text-underline-offset: -0.5rem;
+    text-decoration-skip-ink: none;
+}
+.yellow_marker {
+    text-decoration: underline;
+    text-decoration-thickness: .8rem;
+    text-decoration-color: #fff4ac;
+    text-underline-offset: -0.5rem;
+    text-decoration-skip-ink: none;
 }
 
 
@@ -105,6 +157,10 @@ img {
 
 .container {
     padding: 40px 20px;
+}
+h2.sub_title {
+    font-size: 3.8rem;
+    margin-bottom: 30px;   
 }
 
 }

@@ -1,2 +1,20 @@
 /* footer */
+<<<<<<< HEAD
 /* ============================================ */
+=======
+/* ============================================ */
+footer {
+  text-align: center;
+  position: relative;
+  z-index: 2;
+  .copyright {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.4rem;
+    font-weight: bold;
+    letter-spacing: .2rem;
+    color: $baseColor;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+}
+>>>>>>> origin/develop

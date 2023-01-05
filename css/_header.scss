@@ -1,2 +1,272 @@
 /* header */
+<<<<<<< HEAD
 /* ============================================ */
+=======
+/* ============================================ */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 90px;
+  background-color: $baseColor;
+  padding: 15px 70px;
+  box-sizing: border-box;
+  box-shadow: 0 0 20px rgba($color: #000, $alpha: .2);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  @include tab {
+    height: 80px;
+    padding: 15px 40px;
+  }
+  @include sp {
+    height: 70px;
+    padding: 15px 20px;
+  }
+  .logo {
+    width: 210px;
+    @include tab {
+      width: 180px;
+    }
+    @include sp {
+      width: 130px;
+    }
+  }
+  nav {
+    display: flex;
+    align-items: center;
+    ul {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      margin-right: 20px;
+      @include tab {
+        margin-right: 0;
+      }
+      @include sp {
+        display: none;
+      }
+      li {
+        display: flex;
+        align-items: center;
+        margin-right: 10px;
+        &:last-of-type {
+          margin-right: 0;
+        }
+      }
+    }
+    .card_img {
+      width: 100px;
+    }
+    .contact_btn {
+      a {
+        display: block;
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: $baseColor;
+        background-color: $mainColor;
+        padding: 18px 20px;
+        box-sizing: border-box;
+        border-radius: 30px;
+        &:hover {
+        opacity: .7;
+        transition: all .3s ease-in-out;
+        cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+/* top */
+/* ============================================ */
+.top {
+  background: url(../images/top_bg_left.png) left 0% top 0% / 25% auto no-repeat,
+    url(../images/top_bg_right.png) right 0% bottom 50px / 66% auto no-repeat;
+  margin-top: 90px;
+  @include tab {
+    background: url(../images/top_bg_left.png) left 0% top 0% / 25% auto no-repeat,
+    url(../images/top_bg_right.png) right 0% top 0% / 66% 85% no-repeat;
+    margin-top: 80px;
+  }
+  @include sp {
+    background: url(../images/top_bg_left.png) left 0% top 0% / 25% auto no-repeat,
+    url(../images/top_bg_right.png) right -100px top 0% / 100% 40% no-repeat;
+    margin-top: 70px;
+  }
+  .container {
+    padding: 90px 80px 0;
+    @include tab {
+      padding: 60px 60px 0;
+    }
+    @include sp {
+      padding: 40px;
+      &.sp {
+        background-color: #f4fcff;
+      }
+    }
+  }
+  &_area {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 50px;
+    @include tab {
+      margin-bottom: 30px;
+    }
+    @include sp {
+      margin-bottom: 25px;
+    }
+  }
+  &_left {
+    .main_text {
+      font-size: 5.8rem;
+      font-weight: 900;
+      letter-spacing: .8rem;
+      line-height: 1.3;
+      white-space: nowrap;
+      margin-bottom: 10px;
+      @include tab {
+        font-size: 5rem;
+      }
+      .small {
+        font-size: 5rem;
+        @include tab {
+          font-size: 4.2rem;
+        }
+      }
+      .blue {
+        color: $mainColor;
+      }
+    }
+    .area_list {
+      display: flex;
+      flex-wrap: wrap;
+      @include sp {
+        max-width: 280px;
+      }
+      li {
+        font-size: 1.3rem;
+        font-weight: bold;
+        letter-spacing: .1rem;
+        color: $mainColor;
+        background-color: $baseColor;
+        padding: 6px 10px;
+        box-sizing: border-box;
+        margin-right: 6px;
+        box-shadow: 0 0 10px rgba($color: #3d8dac, $alpha: .2);
+        border-radius: 30px;
+        @include tab {
+          padding: 3px 7px;
+          margin-right: 3px;
+        }
+        @include sp {
+          font-size: 2rem;
+          padding: 5px 13px;
+          margin: 0 5px 5px 0;
+        }
+        &:last-of-type {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+  &_right {
+    .achievement_list {
+      display: flex;
+      justify-content: space-between;
+      li {
+        margin-left: 12px;
+        @include tab {
+          margin-left: 6px;
+        }
+        @include sp {
+          width: 31%;
+          margin: 10px 0 0;
+        }
+      }
+    }
+  }
+  .bottom_area {
+    position: relative;
+    .sub_text {
+      background-color: $baseColor;
+      padding: 25px 30px;
+      box-sizing: border-box;
+      box-shadow: 0 0 20px rgba($color: #000, $alpha: .2);
+      border-radius: 10px;
+      position: relative;
+      @include tab {
+        width: 78%;
+        padding: 20px 25px;
+      }
+      @include sp {
+        width: 100%;
+        background: none;
+        padding: 0;
+        box-shadow: none;
+        border-radius: 0;
+      }
+      .title {
+        display: flex;
+        align-items: center;
+        font-weight: 2.5rem;
+        font-weight: bold;
+        line-height: 1;
+        color: $mainColor;
+        margin-bottom: 15px;
+        @include tab {
+          margin-bottom: 10px;
+        }
+        @include sp {
+          font-size: 2rem;
+        }
+        &:before {
+          content: "";
+          display: inline-block;
+          width: 25px;
+          height: 25px;
+          background: url(../images/exclamation_icon.png) center center / contain no-repeat;
+          margin-right: 7px;
+          @include sp {
+            width: 20px;
+            height: 20px;
+            margin-right: 4px;
+          }
+        }
+      }
+      .text {
+        font-size: 1.4rem;
+        font-weight: 500;
+        letter-spacing: -.03rem;
+        line-height: 1.7;
+        @include sp {
+          font-size: 2rem;
+        }
+      }
+    }
+    .contact_banner {
+      box-shadow: 0 0 20px rgba($color: #000, $alpha: .2);
+      border-radius: 10px;
+      position: absolute;
+      top: 0;
+      right: -210px;
+      a:hover {
+        opacity: .85;
+        transition: all .3s ease-in-out;
+        cursor: pointer;
+      }
+      @include tab {
+        width: 20%;
+        right: 0;
+      }
+      @include sp {
+        width: 100%;
+        position: initial;
+      }
+    }
+  }
+}
+>>>>>>> origin/develop
