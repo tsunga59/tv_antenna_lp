@@ -596,8 +596,8 @@ header nav .contact_btn a:hover {
 .main_bg2:after {
   content: "";
   display: inline-block;
-  width: 380px;
-  height: 510px;
+  width: 65%;
+  height: 1200px;
   background: url(../images/bottom_bg.png) center center/100% 100% no-repeat;
   position: absolute;
   bottom: 0;
@@ -606,15 +606,15 @@ header nav .contact_btn a:hover {
 
 @media screen and (max-width: 1024px) {
   .main_bg2:after {
-    width: 260px;
-    height: 360px;
+    width: 70%;
+    height: 1000px;
   }
 }
 
 @media screen and (max-width: 767px) {
   .main_bg2:after {
-    width: 180px;
-    height: 260px;
+    width: 80%;
+    height: 900px;
   }
 }
 
@@ -1975,13 +1975,12 @@ header nav .contact_btn a:hover {
   font-weight: bold;
   letter-spacing: .2rem;
   width: 22%;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
 @media screen and (max-width: 1024px) {
   .contact .contact_form dl dt {
     width: 28%;
-    margin-bottom: 10px;
   }
 }
 
@@ -1991,6 +1990,7 @@ header nav .contact_btn a:hover {
         -ms-flex-pack: start;
             justify-content: flex-start;
     width: 100%;
+    margin-bottom: 10px;
   }
 }
 
@@ -2215,6 +2215,70 @@ header nav .contact_btn a:hover {
   cursor: pointer;
 }
 
+.about {
+  position: relative;
+  z-index: 2;
+}
+
+.about h2.sub_title {
+  font-size: 3rem;
+}
+
+.about .card_area {
+  background-color: #fff;
+  padding: 80px 60px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (max-width: 1024px) {
+  .about .card_area {
+    padding: 60px 40px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .about .card_area {
+    padding: 40px 20px;
+  }
+}
+
+.about .card_area table {
+  width: 100%;
+}
+
+.about .card_area table th, .about .card_area table td {
+  letter-spacing: .2rem;
+  padding: 30px 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  vertical-align: middle;
+}
+
+@media screen and (max-width: 767px) {
+  .about .card_area table th, .about .card_area table td {
+    padding: 15px 10px;
+  }
+}
+
+.about .card_area table th {
+  font-weight: bold;
+  color: #16a8e0;
+  width: 30%;
+  border-top: 1px solid #16a8e0;
+  border-bottom: 1px solid #16a8e0;
+}
+
+.about .card_area table td {
+  font-weight: 500;
+  width: 70%;
+  border-top: 1px solid #aee5fc;
+  border-bottom: 1px solid #aee5fc;
+}
+
 .thanks {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2269,7 +2333,6 @@ header nav .contact_btn a:hover {
 /* ============================================ */
 footer {
   text-align: center;
-  padding-top: 120px;
   position: relative;
   z-index: 2;
 }
@@ -2279,6 +2342,7 @@ footer .copyright {
   font-size: 1.4rem;
   font-weight: bold;
   letter-spacing: .2rem;
+  color: #fff;
   padding: 10px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;

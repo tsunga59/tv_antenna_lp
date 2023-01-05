@@ -9,19 +9,19 @@
   &:after {
     content: "";
     display: inline-block;
-    width: 380px;
-    height: 510px;
+    width: 65%;
+    height: 1200px;
     background: url(../images/bottom_bg.png) center center / 100% 100% no-repeat;
     position: absolute;
     bottom: 0;
     right: 0;
     @include tab {
-      width: 260px;
-      height: 360px;
+      width: 70%;
+      height: 1000px;
     }
     @include sp {
-      width: 180px;
-      height: 260px;
+      width: 80%;
+      height: 900px;
     }
   }
 }
@@ -69,6 +69,7 @@
     }
   }
 }
+
 .content {
   .main_text {
     font-weight: 500;
@@ -936,14 +937,14 @@
         font-weight: bold;
         letter-spacing: .2rem;
         width: 22%;
-        margin-bottom: 30px;
+        margin-bottom: 40px;
         @include tab {
           width: 28%;
-          margin-bottom: 10px;
         }
         @include sp {
           justify-content: flex-start;
           width: 100%;
+          margin-bottom: 10px;
         }
         &.vertical_top {
           align-self: flex-start;
@@ -1104,6 +1105,52 @@
           transition: all .3s ease-in-out;
           cursor: pointer;
         }
+      }
+    }
+  }
+}
+
+.about {
+  position: relative;
+  z-index: 2;
+  h2.sub_title {
+    font-size: 3rem;
+  }
+  .card_area {
+    background-color: $baseColor;
+    padding: 80px 60px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba($color: #000, $alpha: .2);
+    @include tab {
+      padding: 60px 40px;
+    }
+    @include sp {
+      padding: 40px 20px;
+    }
+    table {
+      width: 100%;
+      th, td {
+        letter-spacing: .2rem;
+        padding: 30px 20px;
+        box-sizing: border-box;
+        vertical-align: middle;
+        @include sp {
+          padding: 15px 10px;
+        }
+      }
+      th {
+        font-weight: bold;
+        color: $mainColor;
+        width: 30%;
+        border-top: 1px solid $mainColor;
+        border-bottom: 1px solid $mainColor;
+      }
+      td {
+        font-weight: 500;
+        width: 70%;
+        border-top: 1px solid #aee5fc;
+        border-bottom: 1px solid #aee5fc;
       }
     }
   }
