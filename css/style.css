@@ -606,15 +606,15 @@ header nav .contact_btn a:hover {
 
 @media screen and (max-width: 1024px) {
   .main_bg2:after {
-    width: 70%;
+    width: 75%;
     height: 1000px;
   }
 }
 
 @media screen and (max-width: 767px) {
   .main_bg2:after {
-    width: 80%;
-    height: 900px;
+    width: 85%;
+    height: 500px;
   }
 }
 
