@@ -662,7 +662,9 @@ header nav .contact_btn a:hover {
   margin-bottom: 20px;
   -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
           box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
   aspect-ratio: 16/9;
+  position: relative;
 }
 
 @media screen and (max-width: 767px) {
@@ -671,10 +673,52 @@ header nav .contact_btn a:hover {
   }
 }
 
-.introduction ul li .video iframe {
+.introduction ul li .video a:before, .introduction ul li .video a:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  opacity: .7;
+}
+
+.introduction ul li .video a:before {
+  width: 80px;
+  height: 80px;
+  background-color: #232323;
+  border-radius: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 767px) {
+  .introduction ul li .video a:before {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+.introduction ul li .video a:after {
+  border-style: solid;
+  border-color: transparent transparent transparent #fff;
+  border-width: 15px 0 15px 25px;
+  -webkit-transform: translate(-40%, -50%);
+          transform: translate(-40%, -50%);
+}
+
+@media screen and (max-width: 767px) {
+  .introduction ul li .video a:after {
+    border-width: 10px 0 10px 15px;
+  }
+}
+
+.introduction ul li .video img {
+  display: inline-block;
   width: 100%;
   height: 100%;
   border-radius: 10px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .introduction ul li p {

@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Zen+Kaku+Gothic+New:wght@400;500;700;900&display=swap" rel="stylesheet">
     <!-- css -->
     <link rel="stylesheet" type="text/css" href="css/reset.css" media="all">
+    <link rel="stylesheet" type="text/css" href="css/modal-video.min.css" media="all">
     <link rel="stylesheet" type="text/css" href="css/style.css" media="all">
     <title>アンテナ工事専門店 大成アンテナ</title>
 </head>
@@ -117,13 +118,17 @@
         <ul>
             <li>
                 <div class="video">
-                    <iframe src="https://www.youtube.com/embed/Rf7qxTTOp4c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <a href="javascript:void(0)" class="js-modal-video" data-video-id="Rf7qxTTOp4c" data-channel="youtube">
+                        <img src="https://img.youtube.com/vi/Rf7qxTTOp4c/sddefault.jpg" />
+                    </a>
                 </div>
                 <p>【施工実績6,000件のプロが解説】アンテナ取付工事を依頼する際に確認すべきポイント＜失敗しない事業者選び＞</p>
             </li>
             <li>
                 <div class="video">
-                    <iframe src="https://www.youtube.com/embed/DDW6ADMwkUI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <a href="javascript:void(0)" class="js-modal-video" data-video-id="DDW6ADMwkUI" data-channel="youtube">
+                        <img src="https://img.youtube.com/vi/DDW6ADMwkUI/sddefault.jpg" />
+                    </a>
                 </div>
                 <p>【見れば分かる】テレビアンテナってどれが良いの？種類と賢い選び方＜取付工事実績6千件の超人気プロが教えます＞</p>
             </li>
@@ -749,6 +754,7 @@
     
 <!-- javascript -->
 <script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery-modal-video.min.js"></script>
 <script type="text/javascript" src="js/jquery.validate.min.js"></script>
 <script type="text/javascript" src="js/main.js"></script>
 

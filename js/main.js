@@ -11,6 +11,12 @@ $(function(){
     });
 });
 
+
+// youtubeモーダル
+$(function(){
+  $('.js-modal-video').modalVideo({channel: 'youtube'});
+});
+
 // お問い合わせフォームバリデーション
 $(function(){
     var validator = $('.contact_form').validate({
