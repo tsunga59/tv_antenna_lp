@@ -888,6 +888,8 @@
 }
 
 .contact {
+  position: relative;
+  z-index: 1;
   .qr_area {
     display: flex;
     justify-content: space-between;

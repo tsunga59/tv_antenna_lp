@@ -1875,6 +1875,11 @@ header nav .contact_btn a:hover {
   }
 }
 
+.contact {
+  position: relative;
+  z-index: 1;
+}
+
 .contact .qr_area {
   display: -webkit-box;
   display: -ms-flexbox;
