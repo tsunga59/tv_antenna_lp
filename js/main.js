@@ -14,7 +14,7 @@ $(function(){
 
 // youtubeモーダル
 $(function(){
-  $('.js-modal-video').modalVideo({channel: 'youtube'});
+  $('.js-modal-video').modalVideo({channel: 'youtube', youtube: {autoplay: 0}});
 });
 
 // お問い合わせフォームバリデーション
