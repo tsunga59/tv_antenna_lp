@@ -346,14 +346,14 @@ header nav .contact_btn a:hover {
 
 @media screen and (max-width: 1024px) {
   .top {
-    background: url(../images/top_bg_left.png) left 0% top 0%/25% auto no-repeat, url(../images/top_bg_right.png) right 0% top 0%/66% 85% no-repeat;
+    background: url(../images/top_bg_left.png) left 0% top 0%/20% auto no-repeat, url(../images/top_bg_right.png) right 0% top 0%/80% auto no-repeat;
     margin-top: 80px;
   }
 }
 
 @media screen and (max-width: 767px) {
   .top {
-    background: url(../images/top_bg_left.png) left 0% top 0%/25% auto no-repeat, url(../images/top_bg_right.png) right -100px top 0%/100% 40% no-repeat;
+    background: url(../images/top_bg_left_sp.png) left 0% top -50px/35% auto no-repeat, url(../images/top_bg_right_sp.png) right 0px top 0%/85% auto no-repeat;
     margin-top: 70px;
   }
 }

@@ -84,13 +84,13 @@ header {
     url(../images/top_bg_right.png) right 0% bottom 50px / 66% auto no-repeat;
   margin-top: 90px;
   @include tab {
-    background: url(../images/top_bg_left.png) left 0% top 0% / 25% auto no-repeat,
-    url(../images/top_bg_right.png) right 0% top 0% / 66% 85% no-repeat;
+    background: url(../images/top_bg_left.png) left 0% top 0% / 20% auto no-repeat,
+    url(../images/top_bg_right.png) right 0% top 0% / 80% auto no-repeat;
     margin-top: 80px;
   }
   @include sp {
-    background: url(../images/top_bg_left.png) left 0% top 0% / 25% auto no-repeat,
-    url(../images/top_bg_right.png) right -100px top 0% / 100% 40% no-repeat;
+    background: url(../images/top_bg_left_sp.png) left 0% top -50px / 35% auto no-repeat,
+    url(../images/top_bg_right_sp.png) right 0px top 0% / 85% auto no-repeat;
     margin-top: 70px;
   }
   .container {
