@@ -68,9 +68,9 @@ header {
         box-sizing: border-box;
         border-radius: 30px;
         &:hover {
-        opacity: .7;
-        transition: all .3s ease-in-out;
-        cursor: pointer;
+          opacity: .7;
+          transition: all .3s ease-in-out;
+          cursor: pointer;
         }
       }
     }

@@ -11,10 +11,36 @@ $(function(){
     });
 });
 
+// スクロールアニメーション
+window.addEventListener("scroll", function(){
+
+  // 固定ボタン表示/非表示
+  const fixedBtn = document.getElementById("fixed_btn");
+  const introduction = document.getElementById("introduction");
+  const contact = document.getElementById("contact");
+
+  let introductionPosition = introduction.getBoundingClientRect().top;
+  let contactPosition = contact.getBoundingClientRect().top;
+  let screenPosition = window.innerHeight;
+  
+  if(contactPosition*1.1 < screenPosition){
+    fixedBtn.classList.add("hidden");
+  } else if(introductionPosition*1.1 < screenPosition){
+    fixedBtn.classList.remove("hidden");
+  } else {
+    fixedBtn.classList.add("hidden");
+  }
+
+});
 
 // youtubeモーダル
 $(function(){
-  $('.js-modal-video').modalVideo({channel: 'youtube', youtube: {autoplay: 0}});
+  $('.js-modal-video').modalVideo({
+    channel: 'youtube',
+    youtube: {
+      autoplay: 0
+    }
+  });
 });
 
 // お問い合わせフォームバリデーション
