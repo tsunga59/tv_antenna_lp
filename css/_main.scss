@@ -1,27 +1,39 @@
 /* main */
 /* ============================================ */
 .main_bg1 {
-  background: url(../images/main_bg1.png) left 0% top 100px / 100% 100% no-repeat;
+  background: url(../images/main_bg1.png) left 0% top 0% / 100% 100% no-repeat;
+  @include tab {
+    background: url(../images/main_bg1.png) center top 0% / 200% 100% no-repeat;
+  }
+  @include sp {
+    background: url(../images/main_bg1.png) center top 0% / 300% 100% no-repeat;
+  }
 }
 .main_bg2 {
   background: url(../images/main_bg2.png) left 0% top 320px / 100% 100% no-repeat;
   position: relative;
+  @include tab {
+    background: url(../images/main_bg2.png) center top 0% / 200% 100% no-repeat;
+  }
+  @include sp {
+    background: url(../images/main_bg2.png) center top 0% / 300% 100% no-repeat;
+  }
   &:after {
     content: "";
     display: inline-block;
     width: 65%;
-    height: 1200px;
+    height: 1600px;
     background: url(../images/bottom_bg.png) center center / 100% 100% no-repeat;
     position: absolute;
     bottom: 0;
     right: 0;
     @include tab {
       width: 75%;
-      height: 1000px;
+      height: 1300px;
     }
     @include sp {
       width: 85%;
-      height: 500px;
+      height: 600px;
     }
   }
 }

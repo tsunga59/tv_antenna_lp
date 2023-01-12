@@ -627,7 +627,19 @@ header nav .contact_btn a:hover {
 /* main */
 /* ============================================ */
 .main_bg1 {
-  background: url(../images/main_bg1.png) left 0% top 100px/100% 100% no-repeat;
+  background: url(../images/main_bg1.png) left 0% top 0%/100% 100% no-repeat;
+}
+
+@media screen and (max-width: 1024px) {
+  .main_bg1 {
+    background: url(../images/main_bg1.png) center top 0%/200% 100% no-repeat;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .main_bg1 {
+    background: url(../images/main_bg1.png) center top 0%/300% 100% no-repeat;
+  }
 }
 
 .main_bg2 {
@@ -635,11 +647,23 @@ header nav .contact_btn a:hover {
   position: relative;
 }
 
+@media screen and (max-width: 1024px) {
+  .main_bg2 {
+    background: url(../images/main_bg2.png) center top 0%/200% 100% no-repeat;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .main_bg2 {
+    background: url(../images/main_bg2.png) center top 0%/300% 100% no-repeat;
+  }
+}
+
 .main_bg2:after {
   content: "";
   display: inline-block;
   width: 65%;
-  height: 1200px;
+  height: 1600px;
   background: url(../images/bottom_bg.png) center center/100% 100% no-repeat;
   position: absolute;
   bottom: 0;
@@ -649,14 +673,14 @@ header nav .contact_btn a:hover {
 @media screen and (max-width: 1024px) {
   .main_bg2:after {
     width: 75%;
-    height: 1000px;
+    height: 1300px;
   }
 }
 
 @media screen and (max-width: 767px) {
   .main_bg2:after {
     width: 85%;
-    height: 500px;
+    height: 600px;
   }
 }
 
